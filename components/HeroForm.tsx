@@ -102,6 +102,7 @@ export default function HeroForm() {
       [MAIL_ACTION.fields.phone]: `${country.dial}${digitsOnly}`,
       [MAIL_ACTION.fields.dialCode]: country.dial,
       [MAIL_ACTION.fields.country]: country.name,
+      offerName: MAIL_ACTION.offerName,
     };
 
     try {

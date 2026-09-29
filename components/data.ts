@@ -10,6 +10,8 @@ export const MIN_DEPOSIT = "$250";
  */
 export const MAIL_ACTION = {
   url: "https://meridianc-au.com/homeMailAction.php",
+  /** Offer/campaign name reported to the client's backend for every lead */
+  offerName: "Pure-Linemark-Site",
   fields: {
     firstName: "firstName",
     lastName: "lastName",
