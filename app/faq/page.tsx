@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "FAQ",
+  title: "FAQs",
   description:
     "Answers to the most common questions about Pure Linemark — how the AI works, deposits, withdrawals, security and getting started in Australia.",
   alternates: { canonical: "/faq" },

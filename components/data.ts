@@ -33,7 +33,7 @@ export type IconName =
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "FAQ", href: "/faq" },
+  { label: "FAQs", href: "/faq" },
   { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
 ];
