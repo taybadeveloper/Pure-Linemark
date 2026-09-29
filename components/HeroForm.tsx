@@ -4,45 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { MIN_DEPOSIT, EMAIL, MAIL_ACTION } from "@/components/data";
-
-interface Country {
-  code: string;
-  name: string;
-  dial: string;
-  example: string;
-  digits: number;
-  format: number[];
-}
-
-const countries: Country[] = [
-  { code: "au", name: "Australia", dial: "+61", example: "0400 000 000", digits: 10, format: [4, 3, 3] },
-  { code: "nz", name: "New Zealand", dial: "+64", example: "021 234 5678", digits: 10, format: [3, 3, 4] },
-  { code: "us", name: "United States", dial: "+1", example: "555 123 4567", digits: 10, format: [3, 3, 4] },
-  { code: "ca", name: "Canada", dial: "+1", example: "416 555 0123", digits: 10, format: [3, 3, 4] },
-  { code: "gb", name: "United Kingdom", dial: "+44", example: "07700 900123", digits: 11, format: [5, 6] },
-  { code: "ie", name: "Ireland", dial: "+353", example: "087 123 4567", digits: 10, format: [3, 3, 4] },
-  { code: "sg", name: "Singapore", dial: "+65", example: "8123 4567", digits: 8, format: [4, 4] },
-  { code: "my", name: "Malaysia", dial: "+60", example: "012 345 6789", digits: 11, format: [3, 4, 4] },
-  { code: "in", name: "India", dial: "+91", example: "98765 43210", digits: 10, format: [5, 5] },
-  { code: "pk", name: "Pakistan", dial: "+92", example: "0300 1234567", digits: 11, format: [4, 7] },
-  { code: "ph", name: "Philippines", dial: "+63", example: "0917 123 4567", digits: 11, format: [4, 3, 4] },
-  { code: "ae", name: "United Arab Emirates", dial: "+971", example: "050 123 4567", digits: 10, format: [3, 3, 4] },
-  { code: "de", name: "Germany", dial: "+49", example: "0151 23456789", digits: 11, format: [4, 3, 4] },
-  { code: "fr", name: "France", dial: "+33", example: "06 12 34 56 78", digits: 10, format: [2, 2, 2, 2, 2] },
-];
-
-/** Insert spaces between digit groups, e.g. [4,7] + "03001234567" -> "0300 1234567" */
-function formatPhone(digits: string, groups: number[]): string {
-  let out = "";
-  let index = 0;
-  for (const group of groups) {
-    if (index >= digits.length) break;
-    if (out) out += " ";
-    out += digits.slice(index, index + group);
-    index += group;
-  }
-  return out;
-}
+import { countries, type Country, formatPhone } from "@/components/countries";
 
 interface Errors {
   firstName?: string;
@@ -74,6 +36,7 @@ export default function HeroForm() {
   const router = useRouter();
   const [country, setCountry] = useState<Country>(countries[0]);
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const [errors, setErrors] = useState<Errors>({});
   const [form, setForm] = useState({
     firstName: "",
@@ -255,7 +218,10 @@ export default function HeroForm() {
             <div className="relative shrink-0" onMouseDown={(e) => e.stopPropagation()}>
               <button
                 type="button"
-                onClick={() => setOpen(!open)}
+                onClick={() => {
+                  setOpen(!open);
+                  setQuery("");
+                }}
                 aria-expanded={open}
                 aria-haspopup="listbox"
                 className="flex h-full items-center gap-2 rounded-l-md border border-r-0 border-slate-300 bg-white px-3 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50"
@@ -281,12 +247,23 @@ export default function HeroForm() {
               </button>
 
               {open && (
-                <ul
-                  role="listbox"
-                  aria-label="Select country"
-                  className="absolute left-0 top-full z-30 mt-1 max-h-60 w-64 overflow-auto rounded-md border border-slate-200 bg-white py-1 shadow-xl"
-                >
-                  {countries.map((c) => (
+                <div className="absolute left-0 top-full z-30 mt-1 w-64 rounded-md border border-slate-200 bg-white shadow-xl">
+                  {/* search */}
+                  <div className="border-b border-slate-100 p-2">
+                    <input
+                      type="text"
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      placeholder="Search country…"
+                      aria-label="Search country"
+                      className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition-all focus:border-amber-500"
+                    />
+                  </div>
+
+                  <ul role="listbox" aria-label="Select country" className="max-h-60 overflow-auto py-1">
+                    {countries
+                      .filter((c) => c.name.toLowerCase().includes(query.trim().toLowerCase()))
+                      .map((c) => (
                     <li key={c.code}>
                       <button
                         type="button"
@@ -297,6 +274,7 @@ export default function HeroForm() {
                           setCountry(c);
                           setForm((prev) => ({ ...prev, phone: "" }));
                           setErrors((prev) => ({ ...prev, phone: undefined }));
+                          setQuery("");
                           setOpen(false);
                         }}
                         className={`flex w-full items-center gap-2.5 px-3 py-2 text-sm transition-colors hover:bg-slate-50 ${
@@ -317,7 +295,8 @@ export default function HeroForm() {
                       </button>
                     </li>
                   ))}
-                </ul>
+                  </ul>
+                </div>
               )}
             </div>
             <input
