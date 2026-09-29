@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="bg-ink-soft">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-4 lg:gap-10">
-          <div className="text-center sm:text-left">
+        <div className="grid gap-6 md:grid-cols-5 lg:grid-cols-4 lg:gap-10">
+          <div className="text-center sm:text-left md:col-span-2 lg:col-span-1">
             <div className="flex justify-center sm:justify-start">
-              <Logo compact />
+              <Logo />
             </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
               <BoldBrand text="Pure Linemark is an AI-powered trading platform for Australians. Our engine trades global markets around the clock — while you live your life." />
