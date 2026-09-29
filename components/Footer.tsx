@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Navbar";
-import { markets, navLinks, EMAIL, riskDisclaimer } from "@/components/data";
+import { navLinks, EMAIL, riskDisclaimer } from "@/components/data";
 import { MailIcon, MapPinIcon } from "@/components/icons";
 
 export default function Footer() {
@@ -48,14 +48,19 @@ export default function Footer() {
 
           <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
-              Popular Markets
+              Legal
             </h3>
             <ul className="mt-5 grid grid-cols-1 gap-2.5">
-              {markets.map((market) => (
-                <li key={market} className="text-sm text-slate-200">
-                  {market}
-                </li>
-              ))}
+              <li>
+                <Link href="/privacy-policy" className="text-sm text-slate-200 transition-colors hover:text-brand">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-and-conditions" className="text-sm text-slate-200 transition-colors hover:text-brand">
+                  Terms &amp; Conditions
+                </Link>
+              </li>
             </ul>
           </div>
 

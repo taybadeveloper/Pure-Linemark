@@ -188,15 +188,6 @@ export const faqs: Faq[] = [
   },
 ];
 
-export const markets = [
-  "Bitcoin",
-  "Ethereum",
-  "Solana",
-  "Litecoin",
-  "Ripple",
-  "Binance Coin",
-];
-
 export const australianStates = [
   "New South Wales",
   "Victoria",
