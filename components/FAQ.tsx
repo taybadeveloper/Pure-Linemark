@@ -34,7 +34,7 @@ export default function FAQ({ limit }: { limit?: number }) {
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-center font-display text-base font-bold uppercase tracking-wide text-slate-900 sm:text-left sm:text-lg">
+                  <span className="font-display text-base font-bold uppercase tracking-wide text-slate-900 sm:text-lg">
                     {faq.question}
                   </span>
                   <PlusIcon
@@ -49,7 +49,7 @@ export default function FAQ({ limit }: { limit?: number }) {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-center text-sm leading-relaxed text-slate-600 sm:text-left sm:text-base">
+                    <p className="px-6 pb-6 text-sm leading-relaxed text-slate-600 sm:text-base">
                       {faq.answer}
                     </p>
                   </div>
