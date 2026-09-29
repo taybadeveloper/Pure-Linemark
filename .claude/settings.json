@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"C:/Users/Tayyaba Saleem/Desktop/Pure-Linemark/.claude/auto-commit.sh\"",
+            "shell": "bash",
+            "timeout": 120,
+            "statusMessage": "Auto-committing changes…"
+          }
+        ]
+      }
+    ]
+  }
+}
