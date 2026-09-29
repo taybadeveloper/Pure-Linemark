@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navLinks, PHONE, PHONE_HREF } from "@/components/data";
-import { PhoneIcon } from "@/components/icons";
+import { navLinks } from "@/components/data";
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
@@ -49,35 +48,28 @@ export default function Navbar() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo light />
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
-          {navLinks.map((link) => {
-            const target = link.href.split("#")[0];
-            const active =
-              target === "/" ? pathname === "/" : pathname.startsWith(target);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`relative text-sm font-semibold uppercase tracking-wide transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:bg-brand after:transition-all ${
-                  active
-                    ? "text-amber-700 after:w-full"
-                    : "text-slate-600 after:w-0 hover:text-slate-900 hover:after:w-full"
-                }`}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="hidden items-center gap-8 lg:flex">
+          <nav className="flex items-center gap-8" aria-label="Main navigation">
+            {navLinks.map((link) => {
+              const target = link.href.split("#")[0];
+              const active =
+                target === "/" ? pathname === "/" : pathname.startsWith(target);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`relative text-sm font-semibold uppercase tracking-wide transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:bg-brand after:transition-all ${
+                    active
+                      ? "text-amber-700 after:w-full"
+                      : "text-slate-600 after:w-0 hover:text-slate-900 hover:after:w-full"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
-          <a
-            href={PHONE_HREF}
-            className="flex items-center gap-2 text-sm font-semibold text-slate-700 transition-colors hover:text-amber-700"
-          >
-            <PhoneIcon className="h-4 w-4 text-amber-600" />
-            {PHONE}
-          </a>
           <Link
             href="/sign-up"
             className="rounded-md bg-ink px-5 py-2.5 font-display text-sm font-bold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-slate-800"
@@ -117,11 +109,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-4 space-y-3 px-3">
-            <a href={PHONE_HREF} className="flex items-center gap-2 font-semibold text-amber-700">
-              <PhoneIcon className="h-4 w-4" />
-              {PHONE}
-            </a>
+          <div className="mt-4 px-3">
             <Link
               href="/sign-up"
               onClick={() => setOpen(false)}

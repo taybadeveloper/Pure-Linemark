@@ -1,6 +1,4 @@
 export const SITE_URL = "https://purelinemark-au.com";
-export const PHONE = "1300 787 356";
-export const PHONE_HREF = "tel:1300787356";
 export const EMAIL = "support@purelinemark-au.com";
 export const MIN_DEPOSIT = "$250";
 

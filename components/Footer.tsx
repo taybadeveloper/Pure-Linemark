@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/Navbar";
-import { markets, navLinks, PHONE, PHONE_HREF, EMAIL, riskDisclaimer } from "@/components/data";
-import { PhoneIcon, MailIcon, MapPinIcon } from "@/components/icons";
+import { markets, navLinks, EMAIL, riskDisclaimer } from "@/components/data";
+import { MailIcon, MapPinIcon } from "@/components/icons";
 
 export default function Footer() {
   return (
@@ -16,10 +16,6 @@ export default function Footer() {
               trades global markets around the clock — while you live your life.
             </p>
             <div className="mt-5 space-y-2 text-sm">
-              <a href={PHONE_HREF} className="flex items-center gap-2.5 text-slate-100 transition-colors hover:text-brand">
-                <PhoneIcon className="h-4 w-4 text-brand" />
-                {PHONE}
-              </a>
               <a href={`mailto:${EMAIL}`} className="flex items-center gap-2.5 text-slate-100 transition-colors hover:text-brand">
                 <MailIcon className="h-4 w-4 text-brand" />
                 {EMAIL}

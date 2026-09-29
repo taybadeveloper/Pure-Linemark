@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import HeroForm from "@/components/HeroForm";
-import { PHONE, PHONE_HREF, EMAIL } from "@/components/data";
-import { PhoneIcon, MailIcon, ClockIcon, MapPinIcon } from "@/components/icons";
+import { EMAIL } from "@/components/data";
+import { MailIcon, ClockIcon, MapPinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact the Pure Linemark Australian support team — call 1300 787 356, email us or use the contact details below. We're here 7 days a week.",
+    "Contact the Pure Linemark Australian support team — email us or use the contact details below. We're here 7 days a week.",
   alternates: { canonical: "/contact" },
 };
 
@@ -24,21 +24,6 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
           {/* Contact info cards — left side */}
           <div className="space-y-6 lg:col-span-2">
-          <a
-            href={PHONE_HREF}
-            className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-amber-300"
-          >
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
-              <PhoneIcon className="h-6 w-6 text-amber-700" />
-            </span>
-            <span>
-              <span className="block text-xs font-bold uppercase tracking-widest text-slate-500">
-                Call Us Direct
-              </span>
-              <span className="font-display text-xl font-bold text-slate-900">{PHONE}</span>
-            </span>
-          </a>
-
           <a
             href={`mailto:${EMAIL}`}
             className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-amber-300"

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { MIN_DEPOSIT, PHONE, PHONE_HREF, EMAIL, MAIL_ACTION } from "@/components/data";
+import { MIN_DEPOSIT, EMAIL, MAIL_ACTION } from "@/components/data";
 import { CheckIcon } from "@/components/icons";
 
 interface Country {
@@ -193,11 +193,7 @@ export default function HeroForm() {
           </p>
           <p className="mt-1.5">
             Your registration has been submitted — our team will contact you within one
-            business day. Need it faster? Call{" "}
-            <a href={PHONE_HREF} className="font-semibold text-amber-700 hover:underline">
-              {PHONE}
-            </a>
-            .
+            business day.
           </p>
         </div>
       )}

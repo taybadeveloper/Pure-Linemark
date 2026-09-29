@@ -3,7 +3,7 @@ import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { SITE_URL, PHONE, EMAIL } from "@/components/data";
+import { SITE_URL, EMAIL } from "@/components/data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,7 +53,6 @@ const jsonLd = {
   "@type": "Organization",
   name: "Pure Linemark",
   url: SITE_URL,
-  telephone: PHONE,
   email: EMAIL,
   description:
     "AI-powered trading platform for Australian investors. Automated trading across global markets.",
