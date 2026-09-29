@@ -5,7 +5,7 @@ import { MIN_DEPOSIT } from "@/components/data";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden border-b border-slate-200 bg-white">
       {/* background pattern */}
       <div
         aria-hidden="true"
