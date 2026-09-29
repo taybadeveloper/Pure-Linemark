@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
+import BoldBrand from "@/components/BoldBrand";
 import { faqs } from "@/components/data";
 import { PlusIcon } from "@/components/icons";
 
@@ -50,7 +51,7 @@ export default function FAQ({ limit }: { limit?: number }) {
                 >
                   <div className="overflow-hidden">
                     <p className="px-6 pb-6 text-sm leading-relaxed text-slate-600 sm:text-base">
-                      {faq.answer}
+                      <BoldBrand text={faq.answer} />
                     </p>
                   </div>
                 </div>

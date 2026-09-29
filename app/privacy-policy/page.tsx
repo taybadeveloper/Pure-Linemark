@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import BoldBrand from "@/components/BoldBrand";
 import { EMAIL } from "@/components/data";
 
 export const metadata: Metadata = {
@@ -56,7 +57,9 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-display text-xl font-bold uppercase tracking-wide text-slate-900">
                 {index + 1}. {section.title}
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-slate-600">{section.body}</p>
+              <p className="mt-3 text-base leading-relaxed text-slate-600">
+                <BoldBrand text={section.body} />
+              </p>
             </div>
           ))}
         </div>

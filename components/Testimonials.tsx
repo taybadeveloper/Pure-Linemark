@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/SectionHeading";
+import BoldBrand from "@/components/BoldBrand";
 import { reviews } from "@/components/data";
 import { QuoteIcon, StarIcon } from "@/components/icons";
 
@@ -27,7 +28,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="mt-5 flex-1 text-sm leading-relaxed text-slate-600">
-                &ldquo;{review.quote}&rdquo;
+                &ldquo;<BoldBrand text={review.quote} />&rdquo;
               </blockquote>
               <figcaption className="mt-6 border-t border-slate-200 pt-4">
                 <p className="font-display font-bold uppercase tracking-wide text-slate-900">

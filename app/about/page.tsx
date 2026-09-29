@@ -52,10 +52,10 @@ export default function AboutPage() {
               </h2>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600">
                 <p>
-                  Pure Linemark was founded by Australian traders and software engineers who
-                  shared a simple frustration: great trading opportunities don&apos;t wait for
-                  business hours, and most people don&apos;t have time to watch markets around
-                  the clock.
+                  <strong className="text-slate-900">Pure Linemark</strong> was founded by
+                  Australian traders and software engineers who shared a simple frustration:
+                  great trading opportunities don&apos;t wait for business hours, and most
+                  people don&apos;t have time to watch markets around the clock.
                 </p>
                 <p>
                   So we built an AI engine that does the watching for you. It scans global
@@ -63,7 +63,8 @@ export default function AboutPage() {
                   trades in milliseconds — while you get on with your day.
                 </p>
                 <p>
-                  Today, more than 28,000 Australians trust Pure Linemark to trade on their
+                  Today, more than 28,000 Australians trust{" "}
+                  <strong className="text-slate-900">Pure Linemark</strong> to trade on their
                   behalf — from first-time investors starting with $250 to experienced traders
                   who simply want their capital working harder.
                 </p>

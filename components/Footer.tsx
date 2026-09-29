@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Navbar";
+import BoldBrand from "@/components/BoldBrand";
 import { navLinks, EMAIL, riskDisclaimer } from "@/components/data";
 import { MailIcon, MapPinIcon } from "@/components/icons";
 
@@ -13,8 +14,7 @@ export default function Footer() {
               <Logo compact />
             </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
-              Pure Linemark is an AI-powered trading platform for Australians. Our engine
-              trades global markets around the clock — while you live your life.
+              <BoldBrand text="Pure Linemark is an AI-powered trading platform for Australians. Our engine trades global markets around the clock — while you live your life." />
             </p>
             <div className="mt-5 space-y-2 text-sm">
               <a href={`mailto:${EMAIL}`} className="flex items-center justify-center gap-2.5 text-slate-100 transition-colors hover:text-brand sm:justify-start">
@@ -83,7 +83,9 @@ export default function Footer() {
           <h3 className="text-center font-display text-xs font-bold uppercase tracking-widest text-slate-300 sm:text-left">
             Risk Disclosure
           </h3>
-          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 sm:text-left">{riskDisclaimer}</p>
+          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 sm:text-left">
+            <BoldBrand text={riskDisclaimer} />
+          </p>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
