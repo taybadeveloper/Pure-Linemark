@@ -68,7 +68,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <p className="mt-8 text-xs leading-relaxed text-slate-400">
+          <p className="mt-8 hidden text-xs leading-relaxed text-slate-400 sm:block">
             Trading involves risk of loss. Past performance does not guarantee future results.
           </p>
         </div>

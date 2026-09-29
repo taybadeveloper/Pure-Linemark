@@ -351,18 +351,6 @@ export default function HeroForm() {
         >
           Sign Up Now
         </button>
-
-        <p className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-400">
-          <span className="flex items-center gap-1.5">
-            <CheckIcon className="h-3.5 w-3.5 text-green-600" /> No hidden fees
-          </span>
-          <span className="flex items-center gap-1.5">
-            <CheckIcon className="h-3.5 w-3.5 text-green-600" /> Withdraw anytime
-          </span>
-          <span className="flex items-center gap-1.5">
-            <CheckIcon className="h-3.5 w-3.5 text-green-600" /> 2FA secured
-          </span>
-        </p>
       </form>
     </div>
   );
