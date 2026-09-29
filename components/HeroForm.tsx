@@ -38,6 +38,7 @@ export default function HeroForm() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [errors, setErrors] = useState<Errors>({});
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -66,6 +67,7 @@ export default function HeroForm() {
     }
     // clear the error for this field as the user types
     setErrors((prev) => ({ ...prev, [name]: undefined }));
+    setSubmitError(null);
   }
 
   function validate(): Errors {
@@ -115,12 +117,22 @@ export default function HeroForm() {
       });
       const data = (await res.json().catch(() => null)) as {
         status?: string;
+        message?: string;
         redirectUrl?: string;
       } | null;
 
       if (data?.status === "success" && data.redirectUrl) {
         // Hand off to the broker signup flow the backend prepared for this lead
         window.location.href = data.redirectUrl;
+        return;
+      }
+
+      if (data?.status === "error") {
+        // The client's backend rejected this registration (geo block,
+        // duplicate, rate limit…) — show the real reason instead of a fake success.
+        setSubmitError(
+          data.message || "We cannot register you at this time. Please try again later."
+        );
         return;
       }
 
@@ -160,6 +172,19 @@ export default function HeroForm() {
       <p className="mt-2 text-center text-sm text-slate-500 sm:text-left">
         Free to join. Start with just {MIN_DEPOSIT} — takes under 2 minutes.
       </p>
+
+      {submitError && (
+        <div className="mt-5 rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-slate-700" role="alert">
+          <p className="flex items-center gap-2 font-bold text-red-700">
+            <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8v4m0 4h.01" />
+            </svg>
+            Submission Failed
+          </p>
+          <p className="mt-1.5">{submitError}</p>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit} noValidate className="mt-5 grid gap-4">
         {/* First name + Last name in one row */}
