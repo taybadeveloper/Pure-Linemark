@@ -6,7 +6,6 @@ import { MailIcon, MapPinIcon } from "@/components/icons";
 export default function Footer() {
   return (
     <footer className="bg-ink-soft">
-      <div className="hazard h-2 w-full" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-6 md:grid-cols-4 lg:gap-10">
           <div className="text-center sm:text-left">

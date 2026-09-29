@@ -84,8 +84,7 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="hazard h-3 w-2/3 rounded-sm" aria-hidden="true" />
-              <div className="mt-3 overflow-hidden rounded-2xl bg-ink-soft p-8 shadow-xl shadow-slate-900/20">
+              <div className="overflow-hidden rounded-2xl bg-ink-soft p-8 shadow-xl shadow-slate-900/20">
                 <svg viewBox="0 0 520 380" className="h-auto w-full" role="img" aria-label="Illustration of the Pure Linemark AI trading engine analysing markets">
                   <defs>
                     <pattern id="about-trading-dots" width="26" height="26" patternUnits="userSpaceOnUse">

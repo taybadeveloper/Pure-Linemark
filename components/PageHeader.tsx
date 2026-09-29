@@ -32,7 +32,6 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
           {title}
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-slate-600 sm:mx-0 sm:text-left">{description}</p>
-        <div className="hazard mx-auto mt-10 h-2 w-40 rounded-sm sm:mx-0" aria-hidden="true" />
       </div>
     </section>
   );
