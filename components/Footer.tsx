@@ -10,7 +10,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="text-center sm:text-left">
-            <Logo />
+            <div className="flex justify-center sm:justify-start">
+              <Logo />
+            </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
               Pure Linemark is an AI-powered trading platform for Australians. Our engine
               trades global markets around the clock — while you live your life.
