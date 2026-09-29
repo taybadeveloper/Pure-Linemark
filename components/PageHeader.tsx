@@ -24,7 +24,7 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
           opacity: 0.3,
         }}
       />
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-700 sm:text-left">
           {eyebrow}
         </p>
