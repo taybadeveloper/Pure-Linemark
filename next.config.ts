@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Inline the (small) CSS into the HTML so no render-blocking
+  // stylesheet request delays LCP (Lighthouse fix)
+  experimental: {
+    inlineCss: true,
+  },
   // Force browsers to always fetch fresh pages — no stale cached content
   // (static assets in /_next and images keep their normal caching).
   async headers() {
