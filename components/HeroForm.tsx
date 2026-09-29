@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { MIN_DEPOSIT, EMAIL, MAIL_ACTION } from "@/components/data";
-import { CheckIcon } from "@/components/icons";
 
 interface Country {
   code: string;
@@ -71,7 +71,7 @@ function ErrorText({ message }: { message?: string }) {
 }
 
 export default function HeroForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const router = useRouter();
   const [country, setCountry] = useState<Country>(countries[0]);
   const [open, setOpen] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
@@ -142,6 +142,7 @@ export default function HeroForm() {
     };
     const body = new URLSearchParams(payload).toString();
 
+    let mailed = false;
     try {
       await fetch(MAIL_ACTION.url, {
         method: "POST",
@@ -170,10 +171,13 @@ export default function HeroForm() {
           "I would like to open a Pure Linemark trading account.",
         ].join("\n");
         window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
+        mailed = true;
       }
     }
 
-    setSubmitted(true);
+    if (!mailed) {
+      router.push(`/thank-you?name=${encodeURIComponent(form.firstName.trim())}`);
+    }
   }
 
   return (
@@ -184,19 +188,6 @@ export default function HeroForm() {
       <p className="mt-2 text-center text-sm text-slate-500 sm:text-left">
         Free to join. Start with just {MIN_DEPOSIT} — takes under 2 minutes.
       </p>
-
-      {submitted && (
-        <div className="mt-5 rounded-lg border border-green-300 bg-green-50 p-4 text-sm text-slate-700">
-          <p className="flex items-center gap-2 font-bold text-green-800">
-            <CheckIcon className="h-4 w-4" />
-            Thanks, {form.firstName || "there"}!
-          </p>
-          <p className="mt-1.5">
-            Your registration has been submitted — our team will contact you within one
-            business day.
-          </p>
-        </div>
-      )}
 
       <form onSubmit={handleSubmit} noValidate className="mt-5 grid gap-4">
         {/* First name + Last name in one row */}
