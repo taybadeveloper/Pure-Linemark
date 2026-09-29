@@ -68,10 +68,10 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative text-sm font-semibold uppercase tracking-wide transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:bg-brand after:transition-all ${
+                  className={`text-sm font-semibold uppercase tracking-wide transition-colors ${
                     active
-                      ? "text-amber-700 after:w-full"
-                      : "text-slate-600 after:w-0 hover:text-slate-900 hover:after:w-full"
+                      ? "text-amber-700"
+                      : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
                   {link.label}
