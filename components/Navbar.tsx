@@ -5,10 +5,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/components/data";
 
-export function Logo({ light = false }: { light?: boolean }) {
+export function Logo({
+  light = false,
+  compact = false,
+}: {
+  light?: boolean;
+  compact?: boolean;
+}) {
   return (
     <Link href="/" className="flex items-center gap-3" aria-label="Pure Linemark — Home">
-      <svg viewBox="0 0 40 40" className="h-10 w-10 shrink-0" aria-hidden="true">
+      <svg
+        viewBox="0 0 40 40"
+        className={`${compact ? "h-8 w-8" : "h-10 w-10"} shrink-0`}
+        aria-hidden="true"
+      >
         <rect width="40" height="40" rx="9" className="fill-brand" />
         {/* PL monogram */}
         <path
@@ -29,9 +39,9 @@ export function Logo({ light = false }: { light?: boolean }) {
         />
       </svg>
       <span
-        className={`font-display text-xl font-bold uppercase leading-none tracking-wider ${
-          light ? "text-ink" : "text-white"
-        }`}
+        className={`font-display font-bold uppercase leading-none tracking-wider whitespace-nowrap ${
+          compact ? "text-base" : "text-xl"
+        } ${light ? "text-ink" : "text-white"}`}
       >
         Pure <span className={light ? "text-amber-600" : "text-brand"}>Linemark</span>
       </span>

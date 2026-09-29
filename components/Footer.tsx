@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="bg-ink-soft">
       <div className="hazard h-2 w-full" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-4 lg:gap-10">
           <div className="text-center sm:text-left">
             <div className="flex justify-center sm:justify-start">
-              <Logo />
+              <Logo compact />
             </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
               Pure Linemark is an AI-powered trading platform for Australians. Our engine
