@@ -102,7 +102,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2.5 text-center font-display text-lg font-semibold uppercase tracking-wide text-slate-800 hover:bg-slate-50 hover:text-amber-700"
+                  className="block rounded-md px-3 py-2.5 font-display text-lg font-semibold uppercase tracking-wide text-slate-800 hover:bg-slate-50 hover:text-amber-700"
                 >
                   {link.label}
                 </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
             <Link
               href="/sign-up"
               onClick={() => setOpen(false)}
-              className="block rounded-md bg-ink px-5 py-3 text-center font-display font-bold uppercase tracking-wider text-white"
+              className="block rounded-md bg-ink px-5 py-3 text-left font-display font-bold uppercase tracking-wider text-white"
             >
               Sign Up
             </Link>
