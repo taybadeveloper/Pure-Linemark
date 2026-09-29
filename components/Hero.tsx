@@ -45,7 +45,7 @@ export default function Hero() {
             with just {MIN_DEPOSIT}.
           </p>
 
-          <ul className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 sm:justify-start">
+          <ul className="mt-8 hidden flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-slate-600 sm:flex">
             {["No hidden fees", "Withdraw anytime", "2FA secured"].map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <CheckIcon className="h-4 w-4 text-green-600" />
