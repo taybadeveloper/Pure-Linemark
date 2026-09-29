@@ -1,3 +1,5 @@
+import BoldBrand from "@/components/BoldBrand";
+
 interface SectionHeadingProps {
   eyebrow: string;
   title: string;
@@ -25,7 +27,9 @@ export default function SectionHeading({
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base leading-relaxed text-slate-600">{description}</p>
+        <p className="mt-4 text-base leading-relaxed text-slate-600">
+          <BoldBrand text={description} />
+        </p>
       )}
     </div>
   );
