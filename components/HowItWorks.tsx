@@ -13,12 +13,7 @@ export default function HowItWorks() {
           description="No charts to watch, no experience required. You fund your account, switch the engine on, and let the AI do the rest."
         />
 
-        <div className="relative mt-14 grid gap-10 sm:grid-cols-3 lg:gap-8">
-          {/* connecting dashed line (desktop) */}
-          <div
-            aria-hidden="true"
-            className="absolute left-0 right-0 top-7 hidden border-t-2 border-dashed border-amber-400/60 sm:block"
-          />
+        <div className="mt-14 grid gap-10 sm:grid-cols-3 lg:gap-8">
           {steps.map((step, index) => (
             <div key={step.title} className="relative text-center sm:px-2">
               <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-full border-2 border-brand bg-white font-display text-xl font-bold text-ink shadow-md shadow-amber-900/10">

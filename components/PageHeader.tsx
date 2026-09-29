@@ -25,8 +25,7 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         }}
       />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <p className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
-          <span className="inline-block h-px w-8 bg-amber-500/70" aria-hidden="true" />
+        <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
           {eyebrow}
         </p>
         <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-slate-900 sm:text-5xl">

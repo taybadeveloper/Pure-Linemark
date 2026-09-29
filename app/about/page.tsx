@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Stats from "@/components/Stats";
-import { BotIcon, ShieldIcon, HeadsetIcon } from "@/components/icons";
+import { BotIcon, ShieldIcon, HeadsetIcon, CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   "Australian-based support team",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm font-medium text-slate-700">
-                    <span className="mt-1.5 h-1.5 w-4 shrink-0 rounded-full bg-amber-500" aria-hidden="true" />
+                    <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
                     {item}
                   </li>
                 ))}
