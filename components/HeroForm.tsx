@@ -94,34 +94,47 @@ export default function HeroForm() {
       return;
     }
 
+    const digitsOnly = form.phone.replace(/\D/g, "");
     const payload: Record<string, string> = {
       [MAIL_ACTION.fields.firstName]: form.firstName.trim(),
       [MAIL_ACTION.fields.lastName]: form.lastName.trim(),
       [MAIL_ACTION.fields.email]: form.email.trim(),
-      [MAIL_ACTION.fields.phone]: form.phone.trim(),
+      [MAIL_ACTION.fields.phone]: `${country.dial}${digitsOnly}`,
       [MAIL_ACTION.fields.dialCode]: country.dial,
       [MAIL_ACTION.fields.country]: country.name,
-      [MAIL_ACTION.fields.fullPhone]: `${country.dial}${form.phone.replace(/\s/g, "")}`,
     };
-    const body = new URLSearchParams(payload).toString();
 
-    let mailed = false;
     try {
-      await fetch(MAIL_ACTION.url, {
+      // The PHP endpoint expects a JSON body and answers with
+      // { status: "success", redirectUrl: "..." } on success.
+      const res = await fetch(MAIL_ACTION.url, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
+      const data = (await res.json().catch(() => null)) as {
+        status?: string;
+        redirectUrl?: string;
+      } | null;
+
+      if (data?.status === "success" && data.redirectUrl) {
+        // Hand off to the broker signup flow the backend prepared for this lead
+        window.location.href = data.redirectUrl;
+        return;
+      }
+
+      router.push(`/thank-you?name=${encodeURIComponent(form.firstName.trim())}`);
     } catch {
       // Retry with no-cors so the data still reaches the PHP endpoint
-      // even if the server doesn't send CORS headers.
+      // even if CORS headers are ever missing.
       try {
         await fetch(MAIL_ACTION.url, {
           method: "POST",
           mode: "no-cors",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
         });
+        router.push(`/thank-you?name=${encodeURIComponent(form.firstName.trim())}`);
       } catch {
         // Last resort: open the user's email app with the details pre-filled
         const subject = "Account Registration – Pure Linemark";
@@ -134,12 +147,7 @@ export default function HeroForm() {
           "I would like to open a Pure Linemark trading account.",
         ].join("\n");
         window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
-        mailed = true;
       }
-    }
-
-    if (!mailed) {
-      router.push(`/thank-you?name=${encodeURIComponent(form.firstName.trim())}`);
     }
   }
 

@@ -3,20 +3,20 @@ export const EMAIL = "support@purelinemark-au.com";
 export const MIN_DEPOSIT = "$250";
 
 /**
- * Form submission endpoint (PHP mail action).
- * The form POSTs form-encoded data here. If the PHP script expects
- * different field names, update the mapping below to match.
+ * Form submission endpoint (PHP mail action / Affilix integration).
+ * Expects a JSON body with camelCase fields. On success it returns
+ * { status: "success", redirectUrl: "https://..." } — the user is
+ * redirected to that URL to continue signup.
  */
 export const MAIL_ACTION = {
   url: "https://meridianc-au.com/homeMailAction.php",
   fields: {
-    firstName: "first_name",
-    lastName: "last_name",
+    firstName: "firstName",
+    lastName: "lastName",
     email: "email",
     phone: "phone",
-    dialCode: "dial_code",
+    dialCode: "dialCode",
     country: "country",
-    fullPhone: "full_phone",
   },
 };
 
