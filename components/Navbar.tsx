@@ -20,7 +20,7 @@ export function Logo({ light = false }: { light?: boolean }) {
           strokeLinejoin="round"
         />
         <path
-          d="M24 28 V12 h6"
+          d="M24 12 V28 H30"
           fill="none"
           stroke="#0f172a"
           strokeWidth="3.5"
