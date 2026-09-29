@@ -1,0 +1,40 @@
+interface PageHeaderProps {
+  eyebrow: string;
+  title: string;
+  description: string;
+}
+
+export default function PageHeader({ eyebrow, title, description }: PageHeaderProps) {
+  return (
+    <section className="relative overflow-hidden border-b border-slate-200 bg-slate-50">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(600px 300px at 50% -10%, rgba(245,179,1,0.15), transparent 65%)",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "radial-gradient(#cbd5e1 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+          opacity: 0.3,
+        }}
+      />
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <p className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
+          <span className="inline-block h-px w-8 bg-amber-500/70" aria-hidden="true" />
+          {eyebrow}
+        </p>
+        <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-slate-900 sm:text-5xl">
+          {title}
+        </h1>
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">{description}</p>
+        <div className="hazard mt-10 h-2 w-40 rounded-sm" aria-hidden="true" />
+      </div>
+    </section>
+  );
+}
