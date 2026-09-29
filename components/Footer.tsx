@@ -9,25 +9,25 @@ export default function Footer() {
       <div className="hazard h-2 w-full" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          <div>
+          <div className="text-center sm:text-left">
             <Logo />
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
               Pure Linemark is an AI-powered trading platform for Australians. Our engine
               trades global markets around the clock — while you live your life.
             </p>
             <div className="mt-5 space-y-2 text-sm">
-              <a href={`mailto:${EMAIL}`} className="flex items-center gap-2.5 text-slate-100 transition-colors hover:text-brand">
+              <a href={`mailto:${EMAIL}`} className="flex items-center justify-center gap-2.5 text-slate-100 transition-colors hover:text-brand sm:justify-start">
                 <MailIcon className="h-4 w-4 text-brand" />
                 {EMAIL}
               </a>
-              <p className="flex items-center gap-2.5 text-slate-300">
+              <p className="flex items-center justify-center gap-2.5 text-slate-300 sm:justify-start">
                 <MapPinIcon className="h-4 w-4 text-brand" />
                 Australia-wide
               </p>
             </div>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Quick Links
             </h3>
@@ -45,7 +45,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Popular Markets
             </h3>
@@ -58,7 +58,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Platform Highlights
             </h3>
@@ -74,10 +74,10 @@ export default function Footer() {
 
         {/* Risk disclosure */}
         <div className="mt-12 border-t border-white/10 pt-8">
-          <h3 className="font-display text-xs font-bold uppercase tracking-widest text-slate-300">
+          <h3 className="text-center font-display text-xs font-bold uppercase tracking-widest text-slate-300 sm:text-left">
             Risk Disclosure
           </h3>
-          <p className="mt-2.5 text-xs leading-relaxed text-slate-300">{riskDisclaimer}</p>
+          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 sm:text-left">{riskDisclaimer}</p>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">

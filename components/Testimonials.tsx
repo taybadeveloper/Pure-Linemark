@@ -16,9 +16,9 @@ export default function Testimonials() {
           {reviews.map((review) => (
             <figure
               key={review.name}
-              className="flex flex-col rounded-xl border border-slate-200 bg-white p-7 shadow-sm"
+              className="flex flex-col rounded-xl border border-slate-200 bg-white p-7 text-center shadow-sm sm:text-left"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-center gap-4 sm:justify-between">
                 <QuoteIcon className="h-8 w-8 text-amber-300" />
                 <div className="flex gap-0.5" aria-label="5 out of 5 stars">
                   {Array.from({ length: 5 }).map((_, i) => (

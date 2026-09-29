@@ -43,7 +43,7 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+            <div className="text-center sm:text-left">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
                 Our Story
               </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                   "24/7 automated trading",
                   "Australian-based support team",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm font-medium text-slate-700">
+                  <li key={item} className="flex items-start justify-center gap-2.5 text-sm font-medium text-slate-700 sm:justify-start">
                     <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
                     {item}
                   </li>

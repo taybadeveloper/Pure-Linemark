@@ -25,14 +25,14 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         }}
       />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
+        <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-700 sm:text-left">
           {eyebrow}
         </p>
-        <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-slate-900 sm:text-5xl">
+        <h1 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-slate-900 sm:mx-0 sm:text-left sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">{description}</p>
-        <div className="hazard mt-10 h-2 w-40 rounded-sm" aria-hidden="true" />
+        <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-slate-600 sm:mx-0 sm:text-left">{description}</p>
+        <div className="hazard mx-auto mt-10 h-2 w-40 rounded-sm sm:mx-0" aria-hidden="true" />
       </div>
     </section>
   );

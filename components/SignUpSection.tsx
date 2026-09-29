@@ -25,7 +25,7 @@ export default function SignUpSection() {
           <div>
             <ul className="space-y-4">
               {perks.map((perk) => (
-                <li key={perk} className="flex items-start gap-3 text-base font-medium text-slate-700">
+                <li key={perk} className="flex items-start justify-center gap-3 text-base font-medium text-slate-700 sm:justify-start">
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-green-100">
                     <CheckIcon className="h-4 w-4 text-green-700" />
                   </span>
@@ -33,8 +33,8 @@ export default function SignUpSection() {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="flex items-center gap-3 text-sm text-slate-600">
+            <div className="mt-10 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm sm:text-left">
+              <p className="flex items-center justify-center gap-3 text-sm text-slate-600 sm:justify-start">
                 <span className="flex gap-0.5" aria-hidden="true">
                   {"★★★★★".split("").map((s, i) => (
                     <span key={i} className="text-amber-500">{s}</span>

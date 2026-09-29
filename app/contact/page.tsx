@@ -26,7 +26,7 @@ export default function ContactPage() {
           <div className="space-y-6 lg:col-span-2">
           <a
             href={`mailto:${EMAIL}`}
-            className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-amber-300"
+            className="flex items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-colors hover:border-amber-300 sm:justify-start sm:text-left"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
               <MailIcon className="h-6 w-6 text-amber-700" />
@@ -39,8 +39,8 @@ export default function ContactPage() {
             </span>
           </a>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-            <div className="flex items-center gap-4">
+          <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:text-left">
+            <div className="flex items-center justify-center gap-4 sm:justify-start">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
                 <ClockIcon className="h-6 w-6 text-amber-700" />
               </span>
@@ -54,8 +54,8 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-            <div className="flex items-center gap-4">
+          <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:text-left">
+            <div className="flex items-center justify-center gap-4 sm:justify-start">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
                 <MapPinIcon className="h-6 w-6 text-amber-700" />
               </span>

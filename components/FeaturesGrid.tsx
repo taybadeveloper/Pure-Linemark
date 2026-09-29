@@ -18,9 +18,9 @@ export default function FeaturesGrid() {
             return (
               <div
                 key={feature.title}
-                className="rounded-xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-900/5"
+                className="rounded-xl border border-slate-200 bg-white p-7 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-900/5 sm:text-left"
               >
-                <span className="flex h-13 w-13 items-center justify-center rounded-lg bg-amber-100">
+                <span className="mx-auto flex h-13 w-13 items-center justify-center rounded-lg bg-amber-100 sm:mx-0">
                   <Icon className="h-6.5 w-6.5 text-amber-700" />
                 </span>
                 <h3 className="mt-5 font-display text-xl font-bold uppercase tracking-wide text-slate-900">
