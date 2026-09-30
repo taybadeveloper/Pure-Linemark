@@ -43,14 +43,14 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="text-center sm:text-left">
+            <div className="text-center lg:text-left">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
                 Our Story
               </p>
               <h2 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-slate-900 sm:text-4xl">
                 From a team that got tired of watching charts
               </h2>
-              <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600">
+              <div className="mx-auto mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-600 lg:mx-0">
                 <p>
                   <strong className="text-slate-900">Pure Linemark</strong> was founded by
                   Australian traders and software engineers who shared a simple frustration:
