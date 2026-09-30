@@ -32,7 +32,7 @@ export default function Hero() {
             Australia&apos;s AI-Powered Trading Platform
           </p>
 
-          <h1 className="mt-6 font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl xl:text-5xl">
+          <h1 className="mt-6 font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
             Earn Up To <span className="text-amber-600">$850 Daily</span>
             <br />
             With <span className="text-amber-600">Pure Linemark</span>
