@@ -25,7 +25,7 @@ export default function SignUpSection() {
           <div>
             <ul className="mx-auto max-w-md space-y-4">
               {perks.map((perk) => (
-                <li key={perk} className="flex items-start justify-center gap-3 text-base font-medium text-slate-700 sm:justify-start">
+                <li key={perk} className="flex items-start justify-start gap-3 text-base font-medium text-slate-700">
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-green-100">
                     <CheckIcon className="h-4 w-4 text-green-700" />
                   </span>

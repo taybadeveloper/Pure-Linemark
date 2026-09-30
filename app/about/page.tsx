@@ -76,7 +76,7 @@ export default function AboutPage() {
                   "24/7 automated trading",
                   "Australian-based support team",
                 ].map((item) => (
-                  <li key={item} className="flex items-start justify-center gap-2.5 text-sm font-medium text-slate-700 sm:justify-start">
+                  <li key={item} className="flex items-start justify-start gap-2.5 text-sm font-medium text-slate-700">
                     <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
                     {item}
                   </li>
