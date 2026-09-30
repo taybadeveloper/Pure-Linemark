@@ -9,26 +9,26 @@ export default function Footer() {
     <footer className="bg-ink-soft">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-6 md:grid-cols-5 lg:grid-cols-4 lg:gap-10">
-          <div className="text-center sm:text-left md:col-span-2 lg:col-span-1">
-            <div className="flex justify-center sm:justify-start">
+          <div className="text-center md:col-span-2 md:text-left lg:col-span-1">
+            <div className="flex justify-center md:justify-start">
               <Logo />
             </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-200">
               <BoldBrand text="Pure Linemark is an AI-powered trading platform for Australians. Our engine trades global markets around the clock, while you live your life." />
             </p>
             <div className="mt-5 space-y-2 text-sm">
-              <a href={`mailto:${EMAIL}`} className="flex items-center justify-center gap-2.5 text-slate-100 transition-colors hover:text-brand sm:justify-start">
+              <a href={`mailto:${EMAIL}`} className="flex items-center justify-center gap-2.5 text-slate-100 transition-colors hover:text-brand md:justify-start">
                 <MailIcon className="h-4 w-4 text-brand" />
                 {EMAIL}
               </a>
-              <p className="flex items-center justify-center gap-2.5 text-slate-300 sm:justify-start">
+              <p className="flex items-center justify-center gap-2.5 text-slate-300 md:justify-start">
                 <MapPinIcon className="h-4 w-4 text-brand" />
                 Australia-wide
               </p>
             </div>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center md:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Quick Links
             </h3>
@@ -46,7 +46,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center md:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Legal
             </h3>
@@ -64,7 +64,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center md:text-left">
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
               Platform Highlights
             </h3>
@@ -80,10 +80,10 @@ export default function Footer() {
 
         {/* Risk disclosure */}
         <div className="mt-12 border-t border-white/10 pt-8">
-          <h3 className="text-center font-display text-xs font-bold uppercase tracking-widest text-slate-300 sm:text-left">
+          <h3 className="text-center font-display text-xs font-bold uppercase tracking-widest text-slate-300 md:text-left">
             Risk Disclosure
           </h3>
-          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 sm:text-left">
+          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 md:text-left">
             <BoldBrand text={riskDisclaimer} />
           </p>
         </div>
