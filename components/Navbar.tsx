@@ -103,27 +103,27 @@ export default function Navbar() {
 
       {open && (
         <nav
-          className="border-t border-slate-200 bg-white px-4 pb-6 pt-4 md:hidden"
+          className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 md:hidden"
           aria-label="Mobile navigation"
         >
-          <ul className="space-y-1">
+          <ul className="space-y-0.5">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2.5 font-display text-lg font-semibold uppercase tracking-wide text-slate-800 hover:bg-slate-50 hover:text-amber-700"
+                  className="block rounded-md px-3 py-1.5 font-display text-base font-semibold uppercase tracking-wide text-slate-800 hover:bg-slate-50 hover:text-amber-700"
                 >
                   {link.label}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="mt-4 px-3">
+          <div className="mt-2 px-3">
             <Link
               href="/sign-up"
               onClick={() => setOpen(false)}
-              className="block rounded-md bg-ink px-5 py-3 text-center font-display font-bold uppercase tracking-wider text-white"
+              className="block rounded-md bg-ink px-5 py-2.5 text-center font-display font-bold uppercase tracking-wider text-white"
             >
               Sign Up
             </Link>
