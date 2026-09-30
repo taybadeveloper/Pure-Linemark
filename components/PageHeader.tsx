@@ -27,13 +27,13 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         }}
       />
       <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-        <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-700 sm:text-left">
+        <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
           {eyebrow}
         </p>
-        <h1 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:mx-0 sm:text-left sm:text-5xl">
+        <h1 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-5xl">
           {title}
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-slate-600 sm:mx-0 sm:text-left">
+        <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           <BoldBrand text={description} />
         </p>
       </div>
