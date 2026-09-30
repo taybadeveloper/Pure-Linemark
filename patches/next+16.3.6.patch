@@ -1,0 +1,49 @@
+diff --git a/node_modules/next/dist/client/app-globals.js b/node_modules/next/dist/client/app-globals.js
+index 261b6fe..7aa162e 100644
+--- a/node_modules/next/dist/client/app-globals.js
++++ b/node_modules/next/dist/client/app-globals.js
+@@ -3,7 +3,7 @@
+ Object.defineProperty(exports, "__esModule", {
+     value: true
+ });
+-require("../build/polyfills/polyfill-module");
++// polyfill-module removed by patch-package (see patches/) — target browsers support these features natively
+ // Only set up devtools for the dev server.
+ if (process.env.__NEXT_DEV_SERVER) {
+     require('../next-devtools/userspace/app/app-dev-overlay-setup');
+diff --git a/node_modules/next/dist/client/index.js b/node_modules/next/dist/client/index.js
+index 6e5b201..e7f732b 100644
+--- a/node_modules/next/dist/client/index.js
++++ b/node_modules/next/dist/client/index.js
+@@ -35,7 +35,7 @@ _export(exports, {
+ });
+ const _interop_require_default = require("@swc/helpers/_/_interop_require_default");
+ const _jsxruntime = require("react/jsx-runtime");
+-require("../build/polyfills/polyfill-module");
++// polyfill-module removed by patch-package (see patches/) — target browsers support these features natively
+ const _react = /*#__PURE__*/ _interop_require_default._(require("react"));
+ const _client = /*#__PURE__*/ _interop_require_default._(require("react-dom/client"));
+ const _headmanagercontextsharedruntime = require("../shared/lib/head-manager-context.shared-runtime");
+diff --git a/node_modules/next/dist/esm/client/app-globals.js b/node_modules/next/dist/esm/client/app-globals.js
+index 08327a5..de3f047 100644
+--- a/node_modules/next/dist/esm/client/app-globals.js
++++ b/node_modules/next/dist/esm/client/app-globals.js
+@@ -1,5 +1,5 @@
+ // imports polyfill from `@next/polyfill-module` after build.
+-import '../build/polyfills/polyfill-module';
++// polyfill-module removed by patch-package (see patches/) — target browsers support these features natively
+ // Only set up devtools for the dev server.
+ if (process.env.__NEXT_DEV_SERVER) {
+     require('../next-devtools/userspace/app/app-dev-overlay-setup');
+diff --git a/node_modules/next/dist/esm/client/index.js b/node_modules/next/dist/esm/client/index.js
+index 05c2cdb..62ab5bf 100644
+--- a/node_modules/next/dist/esm/client/index.js
++++ b/node_modules/next/dist/esm/client/index.js
+@@ -1,6 +1,6 @@
+ /* global location */ // imports polyfill from `@next/polyfill-module` after build.
+ import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+-import '../build/polyfills/polyfill-module';
++// polyfill-module removed by patch-package (see patches/) — target browsers support these features natively
+ import React from 'react';
+ import ReactDOM from 'react-dom/client';
+ import { HeadManagerContext } from '../shared/lib/head-manager-context.shared-runtime';
