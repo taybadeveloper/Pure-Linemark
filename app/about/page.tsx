@@ -47,7 +47,7 @@ export default function AboutPage() {
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
                 Our Story
               </p>
-              <h2 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-slate-900 lg:text-4xl">
+              <h2 className="mt-4 font-display text-2xl font-bold uppercase leading-tight text-slate-900 md:text-3xl lg:text-4xl">
                 From a team that got tired of watching charts
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-600 lg:mx-0">
