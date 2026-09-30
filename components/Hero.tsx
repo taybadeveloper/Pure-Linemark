@@ -26,7 +26,7 @@ export default function Hero() {
       />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:pb-24 lg:pt-20">
-        <div className="animate-fade-up text-center sm:text-left">
+        <div className="animate-fade-up text-center lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-800">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
             Australia&apos;s AI-Powered Trading Platform
@@ -38,14 +38,14 @@ export default function Hero() {
             With <span className="text-amber-600">Pure Linemark</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
             Our <strong className="text-slate-900">AI trading engine</strong> works the global
             markets around the clock, so your money works while you live your life. Join{" "}
             <strong className="text-slate-900">28,000+ Australian traders</strong> and start
             with just {MIN_DEPOSIT}.
           </p>
 
-          <ul className="mt-8 hidden flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-slate-600 sm:flex">
+          <ul className="mt-8 hidden flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 sm:flex lg:justify-start">
             {["No hidden fees", "Withdraw anytime", "2FA secured"].map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <CheckIcon className="h-4 w-4 text-green-600" />
