@@ -170,10 +170,10 @@ export default function HeroForm() {
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-2xl shadow-slate-900/15 sm:p-8">
-      <h2 className="text-center font-display text-2xl font-bold uppercase tracking-wide text-slate-900 sm:text-left">
+      <h2 className="text-center font-display text-2xl font-bold uppercase tracking-wide text-slate-900 lg:text-left">
         Create Your Account
       </h2>
-      <p className="mt-2 text-center text-sm text-slate-500 sm:text-left">
+      <p className="mt-2 text-center text-sm text-slate-500 lg:text-left">
         Free to join. Start with just {MIN_DEPOSIT}, takes under 2 minutes.
       </p>
 
