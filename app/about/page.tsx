@@ -69,7 +69,7 @@ export default function AboutPage() {
                   who simply want their capital working harder.
                 </p>
               </div>
-              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              <ul className="mx-auto mt-8 grid max-w-lg gap-3 sm:grid-cols-2">
                 {[
                   "Australian-owned & operated",
                   "28,000+ active members",
