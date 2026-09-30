@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { MIN_DEPOSIT, EMAIL, MAIL_ACTION } from "@/components/data";
@@ -45,11 +45,15 @@ export default function HeroForm() {
     email: "",
     phone: "",
   });
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close the country dropdown when clicking anywhere outside it
+  // Close the country dropdown only when the click is OUTSIDE it —
+  // typing/searching inside never closes it
   useEffect(() => {
-    function handleClickOutside() {
-      setOpen(false);
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -247,9 +251,7 @@ export default function HeroForm() {
             Phone Number *
           </label>
           <div className="flex">
-            {/* stopPropagation keeps clicks inside the dropdown from reaching the
-                document-level close handler, so selection always registers first */}
-            <div className="relative shrink-0" onMouseDown={(e) => e.stopPropagation()}>
+            <div ref={dropdownRef} className="relative shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -290,6 +292,7 @@ export default function HeroForm() {
                       onChange={(e) => setQuery(e.target.value)}
                       placeholder="Search country…"
                       aria-label="Search country"
+                      autoFocus
                       className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition-all focus:border-amber-500"
                     />
                   </div>

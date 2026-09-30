@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
       />
 
       <section className="py-16 lg:py-20">
-        <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl space-y-10 px-4 sm:px-6 lg:px-8">
           {sections.map((section, index) => (
             <div key={section.title}>
               <h2 className="font-display text-xl font-bold uppercase tracking-wide text-slate-900">
