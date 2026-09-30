@@ -69,14 +69,14 @@ export default function AboutPage() {
                   who simply want their capital working harder.
                 </p>
               </div>
-              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              <ul className="mx-auto mt-8 grid max-w-lg gap-3 sm:grid-cols-2">
                 {[
                   "Australian-owned & operated",
                   "28,000+ active members",
                   "24/7 automated trading",
                   "Australian-based support team",
                 ].map((item) => (
-                  <li key={item} className="flex items-start justify-center gap-2.5 text-sm font-medium text-slate-700 sm:justify-start">
+                  <li key={item} className="flex items-start justify-start gap-2.5 text-sm font-medium text-slate-700">
                     <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
                     {item}
                   </li>
