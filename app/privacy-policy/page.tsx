@@ -6,7 +6,7 @@ import { EMAIL } from "@/components/data";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Pure Linemark privacy policy — how we collect, use and protect your personal information.",
+    "Pure Linemark privacy policy, how we collect, use and protect your personal information.",
   alternates: { canonical: "/privacy-policy" },
 };
 

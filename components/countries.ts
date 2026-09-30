@@ -31,7 +31,7 @@ function formatFor(digits: number): number[] {
   return [3, 3, 4];
 }
 
-/** Featured countries first — Australia is the default selection */
+/** Featured countries first, Australia is the default selection */
 const featuredCountries: Country[] = [
   { code: "au", name: "Australia", dial: "+61", example: "0400 000 000", digits: 10, format: [4, 3, 3] },
   { code: "nz", name: "New Zealand", dial: "+64", example: "021 234 5678", digits: 10, format: [3, 3, 4] },

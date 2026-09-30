@@ -6,7 +6,7 @@ import { CheckIcon } from "@/components/icons";
 const perks = [
   `Start with just ${MIN_DEPOSIT}`,
   "No account or withdrawal fees",
-  "Withdraw anytime — most in 24 hours",
+  "Withdraw anytime, most in 24 hours",
   "2FA + bank-grade encryption",
   "Australian support, 7 days a week",
 ];
@@ -18,7 +18,7 @@ export default function SignUpSection() {
         <SectionHeading
           eyebrow="Get Started"
           title="Open Your Pure Linemark Account Today"
-          description="Join 28,000+ Australians already trading on autopilot. Two minutes to sign up — that's all it takes."
+          description="Join 28,000+ Australians already trading on autopilot. Two minutes to sign up, that's all it takes."
         />
 
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
@@ -43,8 +43,8 @@ export default function SignUpSection() {
                 <strong className="text-slate-900">4.8/5</strong> average member rating
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-500">
-                &ldquo;The easiest money decision I&apos;ve made — deposit, activate, withdraw.
-                That&apos;s it.&rdquo; — Sarah K., Sydney
+                &ldquo;The easiest money decision I&apos;ve made, deposit, activate, withdraw.
+                That&apos;s it.&rdquo;, Sarah K., Sydney
               </p>
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function HeroForm() {
   });
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close the country dropdown only when the click is OUTSIDE it —
+  // Close the country dropdown only when the click is OUTSIDE it ,
   // typing/searching inside never closes it
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -133,7 +133,7 @@ export default function HeroForm() {
 
       if (data?.status === "error") {
         // The client's backend rejected this registration (geo block,
-        // duplicate, rate limit…) — show the real reason instead of a fake success.
+        // duplicate, rate limit…), show the real reason instead of a fake success.
         setSubmitError(
           data.message || "We cannot register you at this time. Please try again later."
         );
@@ -154,7 +154,7 @@ export default function HeroForm() {
         router.push(`/thank-you?name=${encodeURIComponent(form.firstName.trim())}`);
       } catch {
         // Last resort: open the user's email app with the details pre-filled
-        const subject = "Account Registration – Pure Linemark";
+        const subject = "Account Registration: Pure Linemark";
         const mailBody = [
           `First name: ${form.firstName}`,
           `Last name: ${form.lastName}`,
@@ -174,7 +174,7 @@ export default function HeroForm() {
         Create Your Account
       </h2>
       <p className="mt-2 text-center text-sm text-slate-500 sm:text-left">
-        Free to join. Start with just {MIN_DEPOSIT} — takes under 2 minutes.
+        Free to join. Start with just {MIN_DEPOSIT}, takes under 2 minutes.
       </p>
 
       {submitError && (

@@ -6,7 +6,7 @@ import { EMAIL } from "@/components/data";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "Pure Linemark terms and conditions — the rules that govern your use of the platform and trading accounts.",
+    "Pure Linemark terms and conditions, the rules that govern your use of the platform and trading accounts.",
   alternates: { canonical: "/terms-and-conditions" },
 };
 
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     title: "Trading Risks",
-    body: "Trading in financial markets involves significant risk of loss and is not suitable for everyone. The AI engine does not guarantee profits — past performance is not an indicator of future results. You should never trade with money you cannot afford to lose, and you remain solely responsible for the trades executed on your account.",
+    body: "Trading in financial markets involves significant risk of loss and is not suitable for everyone. The AI engine does not guarantee profits, past performance is not an indicator of future results. You should never trade with money you cannot afford to lose, and you remain solely responsible for the trades executed on your account.",
   },
   {
     title: "No Financial Advice",

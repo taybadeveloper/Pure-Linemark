@@ -5,7 +5,7 @@ export const MIN_DEPOSIT = "$250";
 /**
  * Form submission endpoint (PHP mail action / Affilix integration).
  * Expects a JSON body with camelCase fields. On success it returns
- * { status: "success", redirectUrl: "https://..." } — the user is
+ * { status: "success", redirectUrl: "https://..." }, the user is
  * redirected to that URL to continue signup.
  */
 export const MAIL_ACTION = {
@@ -56,7 +56,7 @@ export const features: Feature[] = [
   {
     title: "Round-the-Clock Coverage",
     description:
-      "Crypto, forex and commodities never sleep — and neither does your portfolio. The engine trades while you sleep, work or holiday.",
+      "Crypto, forex and commodities never sleep, and neither does your portfolio. The engine trades while you sleep, work or holiday.",
     icon: "clock",
   },
   {
@@ -104,7 +104,7 @@ export const steps: Step[] = [
   {
     title: "Withdraw Your Profits",
     description:
-      "Track your portfolio in real time and withdraw your earnings whenever you like — 24 hours a day, 7 days a week.",
+      "Track your portfolio in real time and withdraw your earnings whenever you like, 24 hours a day, 7 days a week.",
   },
 ];
 
@@ -130,13 +130,13 @@ export const reviews: Review[] = [
   },
   {
     quote:
-      "I work full-time and don't have hours to watch charts. Pure Linemark does it all for me — I just check my phone in the morning. Support has been excellent every time I've called.",
+      "I work full-time and don't have hours to watch charts. Pure Linemark does it all for me, I just check my phone in the morning. Support has been excellent every time I've called.",
     name: "Sarah K.",
     role: "Member since 2025 · Sydney NSW",
   },
   {
     quote:
-      "Two-factor security, instant withdrawals and a support team that actually answers. The AI does exactly what it says — trades around the clock while I get on with my day.",
+      "Two-factor security, instant withdrawals and a support team that actually answers. The AI does exactly what it says, trades around the clock while I get on with my day.",
     name: "James T.",
     role: "Member since 2024 · Melbourne VIC",
   },
@@ -151,12 +151,12 @@ export const faqs: Faq[] = [
   {
     question: "How does the Pure Linemark AI work?",
     answer:
-      "Our AI engine continuously analyses global markets — crypto, forex and commodities — using dozens of technical indicators and real-time data feeds. When it identifies a high-probability opportunity, it executes the trade automatically on your behalf, applying your account's risk settings on every position.",
+      "Our AI engine continuously analyses global markets, crypto, forex and commodities, using dozens of technical indicators and real-time data feeds. When it identifies a high-probability opportunity, it executes the trade automatically on your behalf, applying your account's risk settings on every position.",
   },
   {
     question: "How much do I need to start?",
     answer:
-      "You can activate the AI engine with a minimum deposit of just $250. There are no sign-up fees, no account fees and no hidden charges — your deposit is entirely your trading balance.",
+      "You can activate the AI engine with a minimum deposit of just $250. There are no sign-up fees, no account fees and no hidden charges, your deposit is entirely your trading balance.",
   },
   {
     question: "How much can I earn?",
@@ -176,7 +176,7 @@ export const faqs: Faq[] = [
   {
     question: "Do I need trading experience?",
     answer:
-      "Not at all. The AI handles strategy, timing and execution. You simply fund your account, activate the engine and monitor your portfolio from the dashboard — on any device.",
+      "Not at all. The AI handles strategy, timing and execution. You simply fund your account, activate the engine and monitor your portfolio from the dashboard, on any device.",
   },
   {
     question: "Is Pure Linemark available across Australia?",
@@ -202,4 +202,4 @@ export const australianStates = [
 ];
 
 export const riskDisclaimer =
-  "Trading in financial markets involves significant risk of loss and is not suitable for all investors. Past performance — including that of any automated trading system — is not a guarantee or indicator of future results. You should never invest money you cannot afford to lose, and you should consider seeking independent financial advice before making any investment decision. Pure Linemark does not provide financial advice.";
+  "Trading in financial markets involves significant risk of loss and is not suitable for all investors. Past performance, including that of any automated trading system, is not a guarantee or indicator of future results. You should never invest money you cannot afford to lose, and you should consider seeking independent financial advice before making any investment decision. Pure Linemark does not provide financial advice.";

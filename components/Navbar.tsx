@@ -13,7 +13,7 @@ export function Logo({
   compact?: boolean;
 }) {
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Pure Linemark — Home">
+    <Link href="/" className="flex items-center gap-3" aria-label="Pure Linemark, Home">
       <svg
         viewBox="0 0 40 40"
         className={`${compact ? "h-8 w-8" : "h-10 w-10"} shrink-0`}

@@ -6,7 +6,7 @@ import { BotIcon, ShieldIcon, HeadsetIcon, CheckIcon } from "@/components/icons"
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Pure Linemark — the Australian AI-powered trading platform built by traders and engineers to make automated trading simple, secure and accessible.",
+    "Learn about Pure Linemark, the Australian AI-powered trading platform built by traders and engineers to make automated trading simple, secure and accessible.",
   alternates: { canonical: "/about" },
 };
 
@@ -14,7 +14,7 @@ const pillars = [
   {
     title: "The AI Engine",
     description:
-      "Built by traders and engineers, our engine analyses dozens of indicators across crypto, forex and commodities in real time — and acts in milliseconds when opportunity strikes.",
+      "Built by traders and engineers, our engine analyses dozens of indicators across crypto, forex and commodities in real time, and acts in milliseconds when opportunity strikes.",
     icon: BotIcon,
   },
   {
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Pure Linemark"
         title="AI Built for Australian Traders"
-        description="Pure Linemark exists for one reason: to make world-class automated trading simple, secure and accessible for everyday Australians — no finance degree required."
+        description="Pure Linemark exists for one reason: to make world-class automated trading simple, secure and accessible for everyday Australians, no finance degree required."
       />
 
       <section className="py-20 lg:py-28">
@@ -60,12 +60,12 @@ export default function AboutPage() {
                 <p>
                   So we built an AI engine that does the watching for you. It scans global
                   markets 24/7, applies disciplined risk rules on every position, and executes
-                  trades in milliseconds — while you get on with your day.
+                  trades in milliseconds, while you get on with your day.
                 </p>
                 <p>
                   Today, more than 28,000 Australians trust{" "}
                   <strong className="text-slate-900">Pure Linemark</strong> to trade on their
-                  behalf — from first-time investors starting with $250 to experienced traders
+                  behalf, from first-time investors starting with $250 to experienced traders
                   who simply want their capital working harder.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   <circle cx="44" cy="26" r="5" fill="#febc2e" />
                   <circle cx="62" cy="26" r="5" fill="#28c840" />
                   <text x="260" y="31" textAnchor="middle" fill="#64748b" fontSize="10.5" fontWeight="600" letterSpacing="2" fontFamily="Arial, sans-serif">
-                    PURE LINEMARK — AI TRADING DASHBOARD
+                    PURE LINEMARK, AI TRADING DASHBOARD
                   </text>
                   <line x1="20" y1="50" x2="500" y2="50" stroke="#1b2740" strokeWidth="1" />
 

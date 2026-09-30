@@ -10,7 +10,7 @@ export default function CTABanner() {
             Your AI Trading Engine Is Ready
           </h2>
           <p className="mt-3 max-w-xl text-base font-medium text-ink/70">
-            Join 28,000+ Australians and put the markets to work for you — sign up now and
+            Join 28,000+ Australians and put the markets to work for you, sign up now and
             start trading on autopilot today.
           </p>
         </div>

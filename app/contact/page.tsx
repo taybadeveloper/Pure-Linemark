@@ -7,7 +7,7 @@ import { MailIcon, ClockIcon, MapPinIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact the Pure Linemark Australian support team — email us or use the contact details below. We're here 7 days a week.",
+    "Contact the Pure Linemark Australian support team, email us or use the contact details below. We're here 7 days a week.",
   alternates: { canonical: "/contact" },
 };
 
@@ -17,12 +17,12 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact Pure Linemark"
         title="We're Here to Help, 7 Days a Week"
-        description="Questions about your account, deposits or withdrawals? Our Australian support team responds fast — usually within one business day."
+        description="Questions about your account, deposits or withdrawals? Our Australian support team responds fast, usually within one business day."
       />
 
       <section className="border-t border-slate-200 bg-slate-50 py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
-          {/* Contact info cards — left side */}
+          {/* Contact info cards, left side */}
           <div className="space-y-6 lg:col-span-2">
           <a
             href={`mailto:${EMAIL}`}
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
                   Support Hours
                 </p>
-                <p className="font-display text-lg font-bold text-slate-900">7 days: 8am – 10pm AEST</p>
+                <p className="font-display text-lg font-bold text-slate-900">7 days: 8am to 10pm AEST</p>
                 <p className="text-sm text-slate-500">Trading engine runs 24/7, 365 days</p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
           </div>
           </div>
 
-          {/* Registration form — right side */}
+          {/* Registration form, right side */}
           <div className="lg:col-span-3">
             <HeroForm />
           </div>

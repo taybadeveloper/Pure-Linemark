@@ -40,7 +40,7 @@ export default function Hero() {
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
             Our <strong className="text-slate-900">AI trading engine</strong> works the global
-            markets around the clock — so your money works while you live your life. Join{" "}
+            markets around the clock, so your money works while you live your life. Join{" "}
             <strong className="text-slate-900">28,000+ Australian traders</strong> and start
             with just {MIN_DEPOSIT}.
           </p>

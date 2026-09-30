@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Pure Linemark",
   },
   description:
-    "Pure Linemark is Australia's AI-powered trading platform. Our engine trades global markets 24/7 on your behalf — join 28,000+ Australian traders and start with just $250.",
+    "Pure Linemark is Australia's AI-powered trading platform. Our engine trades global markets 24/7 on your behalf, join 28,000+ Australian traders and start with just $250.",
   keywords: [
     "Pure Linemark",
     "AI trading platform Australia",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pure Linemark | AI-Powered Trading Platform in Australia",
     description:
-      "Australia's AI-powered trading platform. The engine trades global markets 24/7 on your behalf — start with just $250.",
+      "Australia's AI-powered trading platform. The engine trades global markets 24/7 on your behalf, start with just $250.",
     url: SITE_URL,
     siteName: "Pure Linemark",
     locale: "en_AU",
