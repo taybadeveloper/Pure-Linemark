@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-5 lg:gap-16 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="animate-fade-up text-center lg:col-span-3 lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-800">
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
+            <span className="hidden h-1.5 w-1.5 animate-pulse rounded-full bg-green-500 sm:block" />
             Australia&apos;s AI-Powered Trading Platform
           </p>
 
