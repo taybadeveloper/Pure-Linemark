@@ -38,7 +38,7 @@ export default function Hero() {
             With <span className="text-amber-600">Pure Linemark</span>
           </h1>
 
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
             Our <strong className="text-slate-900">AI trading engine</strong> works the global
             markets around the clock, so your money works while you live your life. Join{" "}
             <strong className="text-slate-900">28,000+ Australian traders</strong> and start
