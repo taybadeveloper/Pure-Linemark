@@ -40,7 +40,7 @@ export default function AboutPage() {
         description="Pure Linemark exists for one reason: to make world-class automated trading simple, secure and accessible for everyday Australians, no finance degree required."
       />
 
-      <section className="py-20 lg:py-28">
+      <section className="py-16 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
@@ -225,7 +225,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mt-20 grid gap-6 md:grid-cols-3">
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
             {pillars.map((pillar) => (
               <div key={pillar.title} className="rounded-xl border border-slate-200 bg-white p-8 text-center shadow-sm">
                 <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">

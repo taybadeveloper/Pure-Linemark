@@ -11,7 +11,7 @@ export default function FAQ({ limit }: { limit?: number }) {
   const items = limit ? faqs.slice(0, limit) : faqs;
 
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-16 lg:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="FAQs"

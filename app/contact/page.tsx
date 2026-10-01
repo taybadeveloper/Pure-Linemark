@@ -20,7 +20,7 @@ export default function ContactPage() {
         description="Questions about your account, deposits or withdrawals? Our Australian support team responds fast, usually within one business day."
       />
 
-      <section className="border-t border-slate-200 bg-slate-50 py-20 lg:py-28">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
           {/* Contact info cards, left side */}
           <div className="space-y-6 lg:col-span-2">

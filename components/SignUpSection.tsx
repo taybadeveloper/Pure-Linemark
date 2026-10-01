@@ -13,7 +13,7 @@ const perks = [
 
 export default function SignUpSection() {
   return (
-    <section id="sign-up" className="border-t border-slate-200 bg-slate-50 py-20 lg:py-28">
+    <section id="sign-up" className="border-t border-slate-200 bg-slate-50 py-16 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Get Started"

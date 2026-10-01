@@ -35,7 +35,7 @@ export default async function ThankYouPage({
   const { name } = await searchParams;
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-white py-16 lg:py-32">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
