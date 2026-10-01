@@ -10,7 +10,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy-policy" },
 };
 
-const sections = [
+interface Section {
+  title: string;
+  body: string;
+  emailLink?: boolean;
+}
+
+const sections: Section[] = [
   {
     title: "Information We Collect",
     body: "We collect information you provide directly to us, including your name, email address, phone number and country of residence when you register an account or contact our support team. We also collect technical information such as your IP address, browser type and pages visited to keep the platform secure and improve your experience.",
@@ -38,6 +44,7 @@ const sections = [
   {
     title: "Contact Us",
     body: `Questions about this privacy policy can be sent to ${EMAIL}. We review this policy regularly and will post any updates on this page.`,
+    emailLink: true,
   },
 ];
 
@@ -58,7 +65,20 @@ export default function PrivacyPolicyPage() {
                 {index + 1}. {section.title}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-slate-600">
-                <BoldBrand text={section.body} />
+                {section.emailLink ? (
+                  <>
+                    {section.body.split(EMAIL)[0]}
+                    <a
+                      href={`mailto:${EMAIL}`}
+                      className="font-semibold text-amber-700 underline decoration-amber-300 underline-offset-2 transition-colors hover:text-amber-600"
+                    >
+                      {EMAIL}
+                    </a>
+                    {section.body.split(EMAIL)[1]}
+                  </>
+                ) : (
+                  <BoldBrand text={section.body} />
+                )}
               </p>
             </div>
           ))}

@@ -26,7 +26,7 @@ export default function ContactPage() {
           <div className="space-y-6 lg:col-span-2">
           <a
             href={`mailto:${EMAIL}`}
-            className="flex flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-colors hover:border-amber-300 sm:flex-row sm:justify-start sm:text-left"
+            className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-colors hover:border-amber-300 sm:flex-row sm:justify-start sm:text-left"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
               <MailIcon className="h-6 w-6 text-amber-700" />
@@ -35,7 +35,7 @@ export default function ContactPage() {
               <span className="block text-xs font-bold uppercase tracking-widest text-slate-500">
                 Email Us
               </span>
-              <span className="font-display text-xl font-bold text-slate-900 break-all">{EMAIL}</span>
+              <span className="break-all font-display text-xl font-bold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
             </span>
           </a>
 

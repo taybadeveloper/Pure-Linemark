@@ -10,7 +10,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/terms-and-conditions" },
 };
 
-const sections = [
+interface Section {
+  title: string;
+  body: string;
+  emailLink?: boolean;
+}
+
+const sections: Section[] = [
   {
     title: "Acceptance of Terms",
     body: "By creating an account or using the Pure Linemark platform, you agree to these terms and conditions. If you do not agree with any part of these terms, you must not use the platform.",
@@ -54,6 +60,7 @@ const sections = [
   {
     title: "Contact",
     body: `Questions about these terms can be sent to ${EMAIL}.`,
+    emailLink: true,
   },
 ];
 
@@ -74,7 +81,20 @@ export default function TermsPage() {
                 {index + 1}. {section.title}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-slate-600">
-                <BoldBrand text={section.body} />
+                {section.emailLink ? (
+                  <>
+                    {section.body.split(EMAIL)[0]}
+                    <a
+                      href={`mailto:${EMAIL}`}
+                      className="font-semibold text-amber-700 underline decoration-amber-300 underline-offset-2 transition-colors hover:text-amber-600"
+                    >
+                      {EMAIL}
+                    </a>
+                    {section.body.split(EMAIL)[1]}
+                  </>
+                ) : (
+                  <BoldBrand text={section.body} />
+                )}
               </p>
             </div>
           ))}
