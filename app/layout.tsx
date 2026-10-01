@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SITE_URL, EMAIL } from "@/components/data";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const oswald = Oswald({
-  subsets: ["latin"],
-  variable: "--font-oswald",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -65,7 +60,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} ${oswald.variable} scroll-smooth`}>
+    <html lang="en" className={`${poppins.variable} scroll-smooth`}>
       <body className="flex min-h-screen flex-col bg-white font-sans text-slate-700 antialiased">
         <script
           type="application/ld+json"

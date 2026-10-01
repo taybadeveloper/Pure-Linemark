@@ -105,7 +105,7 @@ export default function AboutPage() {
                   <circle cx="26" cy="26" r="5" fill="#ff5f57" />
                   <circle cx="44" cy="26" r="5" fill="#febc2e" />
                   <circle cx="62" cy="26" r="5" fill="#28c840" />
-                  <text x="260" y="31" textAnchor="middle" fill="#64748b" fontSize="10.5" fontWeight="600" letterSpacing="2" fontFamily="Arial, sans-serif">
+                  <text x="260" y="31" textAnchor="middle" fill="#64748b" fontSize="10.5" fontWeight="600" letterSpacing="2" fontFamily="Poppins, Arial, sans-serif">
                     PURE LINEMARK, AI TRADING DASHBOARD
                   </text>
                   <line x1="20" y1="50" x2="500" y2="50" stroke="#1b2740" strokeWidth="1" />
@@ -127,7 +127,7 @@ export default function AboutPage() {
                     { y: 238, label: "2.340" },
                     { y: 293, label: "2.294" },
                   ].map((t) => (
-                    <text key={t.y} x="46" y={t.y} textAnchor="end" fill="#64748b" fontSize="10" fontFamily="Arial, sans-serif">
+                    <text key={t.y} x="46" y={t.y} textAnchor="end" fill="#64748b" fontSize="10" fontFamily="Poppins, Arial, sans-serif">
                       {t.label}
                     </text>
                   ))}
@@ -142,7 +142,7 @@ export default function AboutPage() {
                     { x: 343, label: "14:00" },
                     { x: 396, label: "15:00" },
                   ].map((t) => (
-                    <text key={t.x} x={t.x} y="310" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="Arial, sans-serif">
+                    <text key={t.x} x={t.x} y="310" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="Poppins, Arial, sans-serif">
                       {t.label}
                     </text>
                   ))}
@@ -185,16 +185,16 @@ export default function AboutPage() {
 
                   {/* stat chip */}
                   <rect x="52" y="62" width="110" height="26" rx="13" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.35)" strokeWidth="1" />
-                  <text x="107" y="79" textAnchor="middle" fill="#4ade80" fontSize="11" fontWeight="700" letterSpacing="1" fontFamily="Arial, sans-serif">
+                  <text x="107" y="79" textAnchor="middle" fill="#4ade80" fontSize="11" fontWeight="700" letterSpacing="1" fontFamily="Poppins, Arial, sans-serif">
                     +4.2% TODAY
                   </text>
 
                   {/* last-price tooltip */}
                   <rect x="330" y="42" width="112" height="38" rx="8" fill="#1e293b" stroke="#334155" strokeWidth="1" />
-                  <text x="386" y="60" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="700" fontFamily="Arial, sans-serif">
+                  <text x="386" y="60" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="700" fontFamily="Poppins, Arial, sans-serif">
                     $2,478.50
                   </text>
-                  <text x="386" y="74" textAnchor="middle" fill="#4ade80" fontSize="9.5" fontWeight="600" fontFamily="Arial, sans-serif">
+                  <text x="386" y="74" textAnchor="middle" fill="#4ade80" fontSize="9.5" fontWeight="600" fontFamily="Poppins, Arial, sans-serif">
                     +$850 PROFIT
                   </text>
 
@@ -202,16 +202,16 @@ export default function AboutPage() {
                   <rect x="348" y="236" width="140" height="40" rx="20" fill="#0f172a" stroke="#f5b301" strokeWidth="1.5" />
                   <circle cx="364" cy="256" r="7.5" fill="none" stroke="#22c55e" strokeWidth="1" opacity="0.4" />
                   <circle cx="364" cy="256" r="4" fill="#22c55e" />
-                  <text x="380" y="251" fill="#ffffff" fontSize="10.5" fontWeight="700" letterSpacing="0.5" fontFamily="Arial, sans-serif">
+                  <text x="380" y="251" fill="#ffffff" fontSize="10.5" fontWeight="700" letterSpacing="0.5" fontFamily="Poppins, Arial, sans-serif">
                     AI ENGINE
                   </text>
-                  <text x="380" y="265" fill="#f5b301" fontSize="8" fontWeight="600" letterSpacing="0.5" fontFamily="Arial, sans-serif">
+                  <text x="380" y="265" fill="#f5b301" fontSize="8" fontWeight="600" letterSpacing="0.5" fontFamily="Poppins, Arial, sans-serif">
                     50+ INDICATORS • LIVE
                   </text>
 
                   {/* footer note */}
                   <line x1="20" y1="332" x2="500" y2="332" stroke="#1b2740" strokeWidth="1" />
-                  <text x="260" y="356" textAnchor="middle" fill="#475569" fontSize="9" letterSpacing="1.5" fontFamily="Arial, sans-serif">
+                  <text x="260" y="356" textAnchor="middle" fill="#475569" fontSize="9" letterSpacing="1.5" fontFamily="Poppins, Arial, sans-serif">
                     MARKET DATA DELAYED • FOR ILLUSTRATION ONLY
                   </text>
                 </svg>

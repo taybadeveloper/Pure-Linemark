@@ -67,10 +67,6 @@ export default function Hero() {
               <ArrowRightIcon className="h-4 w-4" />
             </a>
           </div>
-
-          <p className="mt-8 hidden text-xs leading-relaxed text-slate-400 sm:block">
-            Trading involves risk of loss. Past performance does not guarantee future results.
-          </p>
         </div>
 
         <div className="relative animate-fade-up lg:col-span-2 lg:pl-6" style={{ animationDelay: "0.15s" }}>
