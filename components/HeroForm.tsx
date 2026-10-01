@@ -354,7 +354,7 @@ export default function HeroForm() {
 
         <button
           type="submit"
-          className="w-full rounded-md bg-ink px-7 py-3.5 font-display text-base font-bold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-slate-800"
+          className="w-full rounded-md bg-ink px-7 py-3.5 font-display text-base font-bold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
         >
           Sign Up Now
         </button>
