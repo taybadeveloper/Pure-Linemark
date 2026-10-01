@@ -21,9 +21,9 @@ export default function ContactPage() {
       />
 
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-11 lg:px-8">
           {/* Contact info cards, left side */}
-          <div className="space-y-6 lg:col-span-2">
+          <div className="space-y-6 lg:col-span-5">
           <a
             href={`mailto:${EMAIL}`}
             className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-colors hover:border-amber-300 sm:flex-row sm:justify-start sm:text-left"
@@ -71,7 +71,7 @@ export default function ContactPage() {
           </div>
 
           {/* Registration form, right side */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-6">
             <HeroForm />
           </div>
         </div>
