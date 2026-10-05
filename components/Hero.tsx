@@ -54,7 +54,7 @@ export default function Hero() {
             ))}
           </ul>
 
-          <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+          <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 lg:justify-start">
             <Link
               href="#how-it-works"
               className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-amber-700 transition-colors hover:text-amber-800"
