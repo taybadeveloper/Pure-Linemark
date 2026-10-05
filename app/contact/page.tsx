@@ -26,45 +26,45 @@ export default function ContactPage() {
           <div className="space-y-6 lg:col-span-5">
           <a
             href={`mailto:${EMAIL}`}
-            className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-colors hover:border-amber-300 sm:flex-row sm:justify-start sm:text-left"
+            className="group flex flex-col items-center justify-center gap-5 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-colors hover:border-amber-300 lg:flex-row lg:justify-start lg:text-left"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
               <MailIcon className="h-6 w-6 text-amber-700" />
             </span>
             <span>
-              <span className="block text-xs font-bold uppercase tracking-widest text-slate-500">
+              <span className="block text-sm font-bold uppercase tracking-widest text-slate-500">
                 Email Us
               </span>
-              <span className="break-all font-display text-xl font-bold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
+              <span className="mt-1 block break-all font-display text-xl font-bold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
             </span>
           </a>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:text-left">
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start">
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:text-left">
+            <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-start">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
                 <ClockIcon className="h-6 w-6 text-amber-700" />
               </span>
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
+                <p className="text-sm font-bold uppercase tracking-widest text-slate-500">
                   Support Hours
                 </p>
-                <p className="font-display text-lg font-bold text-slate-900">7 days: 8am to 10pm AEST</p>
-                <p className="text-sm text-slate-500">Trading engine runs 24/7, 365 days</p>
+                <p className="mt-1.5 font-display text-lg font-bold text-slate-900">7 days: 8am to 10pm AEST</p>
+                <p className="mt-0.5 text-sm text-slate-500">Trading engine runs 24/7, 365 days</p>
               </div>
             </div>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:text-left">
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start">
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:text-left">
+            <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-start">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
                 <MapPinIcon className="h-6 w-6 text-amber-700" />
               </span>
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
+                <p className="text-sm font-bold uppercase tracking-widest text-slate-500">
                   Availability
                 </p>
-                <p className="font-display text-lg font-bold text-slate-900">All Australian states</p>
-                <p className="text-sm text-slate-500">Open to Australian residents nationwide</p>
+                <p className="mt-1.5 font-display text-lg font-bold text-slate-900">All Australian states</p>
+                <p className="mt-0.5 text-sm text-slate-500">Open to Australian residents nationwide</p>
               </div>
             </div>
           </div>
