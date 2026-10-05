@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { Logo } from "@/components/Navbar";
 import BoldBrand from "@/components/BoldBrand";
-import { navLinks, EMAIL, riskDisclaimer } from "@/components/data";
+import { navLinks, EMAIL } from "@/components/data";
 import { MailIcon, MapPinIcon } from "@/components/icons";
 
 export default function Footer() {
   return (
     <footer className="bg-ink-soft">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-5 lg:grid-cols-4 lg:gap-10">
+        <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-3 lg:gap-10">
           <div className="text-center md:col-span-2 md:text-left lg:col-span-1">
             <div className="flex justify-center md:justify-start">
               <Logo />
@@ -63,29 +63,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          <div className="text-center md:text-left">
-            <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
-              Platform Highlights
-            </h3>
-            <ul className="mt-5 space-y-2.5 text-sm text-slate-200">
-              <li>24/7 AI trading engine</li>
-              <li>Minimum deposit $250</li>
-              <li>Instant withdrawals</li>
-              <li>2FA secured accounts</li>
-              <li>Australian support team</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Risk disclosure */}
-        <div className="mt-12 border-t border-white/10 pt-8">
-          <h3 className="text-center font-display text-xs font-bold uppercase tracking-widest text-slate-300 md:text-left">
-            Risk Disclosure
-          </h3>
-          <p className="mt-2.5 text-center text-xs leading-relaxed text-slate-300 md:text-left">
-            <BoldBrand text={riskDisclaimer} />
-          </p>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
