@@ -56,13 +56,13 @@ export default function Hero() {
 
           <div className="mt-6 hidden items-center gap-6 lg:flex">
             <Link
-              href="/sign-up"
+              href="#how-it-works"
               className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-amber-700 transition-colors hover:text-amber-800"
             >
               Learn how the AI works
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
-            <a href="#how-it-works" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-slate-500 transition-colors hover:text-slate-900">
+            <a href="#features" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-slate-500 transition-colors hover:text-slate-900">
               View our features
               <ArrowRightIcon className="h-4 w-4" />
             </a>
