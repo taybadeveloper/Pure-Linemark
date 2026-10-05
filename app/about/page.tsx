@@ -47,7 +47,7 @@ export default function AboutPage() {
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
                 Our Story
               </p>
-              <h2 className="mt-4 font-display text-2xl font-bold uppercase leading-tight text-slate-900 md:text-3xl lg:text-4xl">
+              <h2 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-slate-900 md:text-[2.25rem] lg:text-4xl">
                 From a team that got tired of watching charts
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-600 lg:mx-0">
@@ -231,7 +231,7 @@ export default function AboutPage() {
                 <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
                   <pillar.icon className="h-7 w-7 text-amber-600" />
                 </span>
-                <h3 className="mt-5 font-display text-xl font-bold uppercase tracking-wide text-slate-900">
+                <h3 className="mt-5 font-display text-[1.375rem] font-bold uppercase tracking-wide text-slate-900">
                   {pillar.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">{pillar.description}</p>

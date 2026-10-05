@@ -30,7 +30,7 @@ export default function PageHeader({ eyebrow, title, description }: PageHeaderPr
         <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
           {eyebrow}
         </p>
-        <h1 className="mx-auto mt-4 max-w-3xl text-center font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
+        <h1 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 md:text-[2.5rem] lg:text-5xl">
           {title}
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
