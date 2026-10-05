@@ -77,7 +77,7 @@ export default function TermsPage() {
         <div className="mx-auto max-w-4xl space-y-10 px-4 sm:px-6 lg:px-8">
           {sections.map((section, index) => (
             <div key={section.title}>
-              <h2 className="font-display text-xl font-bold uppercase tracking-wide text-slate-900">
+              <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-slate-900">
                 {index + 1}. {section.title}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-slate-600">
