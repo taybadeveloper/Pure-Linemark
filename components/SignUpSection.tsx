@@ -33,8 +33,8 @@ export default function SignUpSection() {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm sm:text-left">
-              <p className="flex items-center justify-center gap-3 text-sm text-slate-600 sm:justify-start">
+            <div className="mt-10 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:text-left">
+              <p className="flex items-center justify-center gap-3 text-sm text-slate-600 lg:justify-start">
                 <span className="flex gap-0.5" aria-hidden="true">
                   {"★★★★★".split("").map((s, i) => (
                     <span key={i} className="text-amber-500">{s}</span>
