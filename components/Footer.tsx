@@ -61,6 +61,11 @@ export default function Footer() {
                   Terms &amp; Conditions
                 </Link>
               </li>
+              <li>
+                <Link href="/disclaimer" className="text-sm text-slate-200 transition-colors hover:text-brand">
+                  Disclaimer
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
