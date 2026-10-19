@@ -1,7 +1,7 @@
 /** Realistic phone mockup showing the Pure Linemark AI trading dashboard */
 export default function PhoneMockup() {
   return (
-    <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[300px]">
+    <div className="relative mx-auto w-full max-w-[220px] sm:max-w-[240px]">
       {/* soft glow behind the phone */}
       <div
         aria-hidden="true"
