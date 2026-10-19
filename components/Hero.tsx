@@ -33,9 +33,9 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
-            Pure Linemark&apos;s AI trading engine trades global markets for you, 24 hours a
-            day, 7 days a week. You don&apos;t read charts. You don&apos;t watch screens. You
-            just switch it on and get on with your life.
+            Trading shouldn&apos;t take over your life. Pure Linemark&apos;s AI engine
+            watches global markets day and night and trades for you. Set it up once, then get
+            on with your day.
           </p>
 
           <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 lg:justify-start">
