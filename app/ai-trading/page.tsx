@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { AiTradingSection, BenefitsSection } from "@/components/HomeSections";
+import { BenefitsSection } from "@/components/HomeSections";
 import { processSteps } from "@/components/data";
 import SectionHeading from "@/components/SectionHeading";
 import FAQ from "@/components/FAQ";
@@ -20,8 +20,6 @@ export default function AiTradingPage() {
         title="AI Trading"
         description="AI trading means software studies the markets and makes trades for you. Here is how it works and why thousands of Australians trust Pure Linemark."
       />
-
-      <AiTradingSection />
 
       <section className="py-8 lg:py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
