@@ -114,7 +114,7 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      <SignUpSection />
+      <SignUpSection showForm={false} ctaHref="/contact" />
     </>
   );
 }

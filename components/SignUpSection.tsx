@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroForm from "@/components/HeroForm";
 import SectionHeading from "@/components/SectionHeading";
 import { MIN_DEPOSIT } from "@/components/data";
@@ -11,7 +12,13 @@ const perks = [
   "Australian support, 7 days a week",
 ];
 
-export default function SignUpSection() {
+export default function SignUpSection({
+  showForm = true,
+  ctaHref = "/#sign-up",
+}: {
+  showForm?: boolean;
+  ctaHref?: string;
+}) {
   return (
     <section id="sign-up" className="border-t border-slate-200 bg-slate-50 py-8 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,6 +27,7 @@ export default function SignUpSection() {
           description="Join 28,000+ Australians already trading on autopilot. Two minutes to sign up, that's all it takes."
         />
 
+        {showForm ? (
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
           <div>
             <ul className="mx-auto max-w-md space-y-4 lg:mx-0">
@@ -50,6 +58,28 @@ export default function SignUpSection() {
 
           <HeroForm />
         </div>
+        ) : (
+        <div className="mx-auto mt-10 max-w-md">
+          <ul className="space-y-4">
+            {perks.map((perk) => (
+              <li key={perk} className="flex items-start justify-center gap-3 text-base font-medium text-slate-700">
+                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-green-100">
+                  <CheckIcon className="h-4 w-4 text-green-700" />
+                </span>
+                {perk}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8 text-center">
+            <Link
+              href={ctaHref}
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-8 py-3.5 font-display text-base font-semibold uppercase tracking-wider text-white shadow-lg shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
+            >
+              Sign Up Now
+            </Link>
+          </div>
+        </div>
+        )}
       </div>
     </section>
   );

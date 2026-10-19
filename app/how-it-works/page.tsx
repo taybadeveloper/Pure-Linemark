@@ -88,7 +88,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <SignUpSection />
+      <SignUpSection showForm={false} ctaHref="/#sign-up" />
     </>
   );
 }

@@ -217,7 +217,7 @@ export default function AiTradingPage() {
       <FAQ />
 
       {/* Ready To Explore AI Trading? */}
-      <SignUpSection />
+      <SignUpSection showForm={false} ctaHref="/#sign-up" />
     </>
   );
 }

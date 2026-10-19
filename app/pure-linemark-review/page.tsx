@@ -236,7 +236,7 @@ export default function ReviewPage() {
         </div>
       </section>
 
-      <SignUpSection />
+      <SignUpSection showForm={false} ctaHref="/contact" />
     </>
   );
 }
