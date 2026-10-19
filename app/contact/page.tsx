@@ -24,18 +24,44 @@ export default function ContactPage() {
           <div className="space-y-8 lg:col-span-6">
           <div className="text-center lg:text-left">
             <h2 className="font-display text-2xl font-semibold uppercase leading-tight tracking-tight text-slate-900 md:text-3xl">
-              Questions? We&apos;re Ready To Help
+              Fill The Form In 4 Simple Steps
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-slate-600">
-              Need help with your account, a deposit or a withdrawal? Our
-              Australian team answers fast, 7 days a week from 8am to 10pm
-              AEST. Drop your details in the form and we&apos;ll come back to
-              you, usually within one business day.
-            </p>
-            <p className="mt-3 text-base leading-relaxed text-slate-600">
-              While you wait, the AI engine keeps working. It trades global
-              markets 24/7, so your portfolio never takes a day off.
-            </p>
+            <ol className="mt-6 space-y-4 text-left">
+              {[
+                {
+                  title: "Enter Your Name",
+                  description: "Type your first and last name.",
+                },
+                {
+                  title: "Add Your Email",
+                  description:
+                    "Use an email you check often. That's where we'll reply.",
+                },
+                {
+                  title: "Pick Your Country And Phone",
+                  description:
+                    "Choose your country from the list and add your phone number.",
+                },
+                {
+                  title: "Hit Sign Up Now",
+                  description: "That's it. Our team takes it from there.",
+                },
+              ].map((step, index) => (
+                <li key={step.title} className="flex items-start gap-3.5">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 font-display text-sm font-semibold text-amber-700">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <p className="font-display text-base font-semibold uppercase tracking-wide text-slate-900">
+                      {step.title}
+                    </p>
+                    <p className="mt-0.5 text-sm leading-relaxed text-slate-600">
+                      {step.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
 
           {/* Registration form, below the text */}
