@@ -174,7 +174,7 @@ export default function HeroForm() {
         Create Your Account
       </h2>
       <p className="mt-2 text-center text-sm text-slate-500">
-        Free to join. Start with just {MIN_DEPOSIT}, takes under 2 minutes.
+        Free to join. Start with just {MIN_DEPOSIT}. Takes under 2 minutes.
       </p>
 
       {submitError && (

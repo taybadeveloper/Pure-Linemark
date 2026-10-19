@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-800">
             <span className="hidden h-1.5 w-1.5 animate-pulse rounded-full bg-green-500 sm:block" />
-            Australia&apos;s AI-Powered Trading Platform
+            Australia&apos;s AI Trading Platform
           </p>
 
           <h1 className="mt-6 font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
@@ -39,14 +39,14 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
-            Our <strong className="text-slate-900">AI trading engine</strong> works the global
-            markets around the clock, so your money works while you live your life. Join{" "}
+            Our AI engine trades global markets around the clock, so your money works while
+            you live your life. Join{" "}
             <strong className="text-slate-900">28,000+ Australian traders</strong> and start
             with just {MIN_DEPOSIT}.
           </p>
 
           <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 lg:justify-start">
-            {["No hidden fees", "Withdraw anytime", "2FA secured"].map((item) => (
+            {["No Hidden Fees", "Withdraw Anytime", "2FA Secured"].map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <CheckIcon className="h-4 w-4 text-green-600" />
                 {item}
@@ -59,11 +59,11 @@ export default function Hero() {
               href="#how-it-works"
               className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-amber-700 transition-colors hover:text-amber-800"
             >
-              Learn how the AI works
+              Learn How The AI Works
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
             <a href="#features" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-slate-500 transition-colors hover:text-slate-900">
-              View our features
+              View Our Features
               <ArrowRightIcon className="h-4 w-4" />
             </a>
           </div>
