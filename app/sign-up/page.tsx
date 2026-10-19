@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import PageHeader from "@/components/PageHeader";
-import SignUpSection from "@/components/SignUpSection";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Sign Up",
@@ -10,13 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function SignUpPage() {
-  return (
-    <>
-      <PageHeader
-        title="Open Your Account in 2 Minutes"
-        description="Fill in the short form below and activate the AI engine with a minimum deposit of just $250. No account fees, no lock-ups, withdraw anytime."
-      />
-      <SignUpSection showForm={false} ctaHref="/#sign-up" />
-    </>
-  );
+  // The registration form lives on the home page
+  redirect("/#sign-up");
 }

@@ -4,7 +4,6 @@ import BoldBrand from "@/components/BoldBrand";
 import SectionHeading from "@/components/SectionHeading";
 import { benefits } from "@/components/data";
 import FAQ from "@/components/FAQ";
-import SignUpSection from "@/components/SignUpSection";
 
 export const metadata: Metadata = {
   title: "AI Trading",
@@ -217,7 +216,6 @@ export default function AiTradingPage() {
       <FAQ />
 
       {/* Ready To Explore AI Trading? */}
-      <SignUpSection showForm={false} ctaHref="/#sign-up" />
     </>
   );
 }

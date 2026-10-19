@@ -4,7 +4,6 @@ import {
   ProcessSection,
   JourneyStepsSection,
 } from "@/components/HomeSections";
-import SignUpSection from "@/components/SignUpSection";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -88,7 +87,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <SignUpSection showForm={false} ctaHref="/#sign-up" />
     </>
   );
 }

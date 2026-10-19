@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import BoldBrand from "@/components/BoldBrand";
-import SignUpSection from "@/components/SignUpSection";
 
 export const metadata: Metadata = {
   title: "Features",
@@ -114,7 +113,6 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      <SignUpSection showForm={false} ctaHref="/contact" />
     </>
   );
 }

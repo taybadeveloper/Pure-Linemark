@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import BoldBrand from "@/components/BoldBrand";
 import SectionHeading from "@/components/SectionHeading";
 import FAQ from "@/components/FAQ";
-import SignUpSection from "@/components/SignUpSection";
 
 export const metadata: Metadata = {
   title: "Review",
@@ -236,7 +235,6 @@ export default function ReviewPage() {
         </div>
       </section>
 
-      <SignUpSection showForm={false} ctaHref="/contact" />
     </>
   );
 }
