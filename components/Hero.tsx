@@ -1,7 +1,6 @@
 import Link from "next/link";
 import HeroForm from "@/components/HeroForm";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
-import { MIN_DEPOSIT } from "@/components/data";
 
 export default function Hero() {
   return (
@@ -29,24 +28,23 @@ export default function Hero() {
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-800">
             <span className="hidden h-1.5 w-1.5 animate-pulse rounded-full bg-green-500 sm:block" />
-            Australia&apos;s AI Trading Platform
+            Join 28,000+ Australian Traders
           </p>
 
           <h1 className="mt-6 font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
-            Earn Up To <span className="text-amber-600">$850 Daily</span>
+            Your Money Should Be <span className="text-amber-600">Working</span>
             <br />
-            With <span className="text-amber-600">Pure Linemark</span>
+            While You <span className="text-amber-600">Sleep</span>
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
-            Our AI engine trades global markets around the clock, so your money works while
-            you live your life. Join{" "}
-            <strong className="text-slate-900">28,000+ Australian traders</strong> and start
-            with just {MIN_DEPOSIT}.
+            Pure Linemark&apos;s AI engine trades global markets for you, 24 hours a day, 7
+            days a week. You don&apos;t read charts. You don&apos;t watch screens. You just
+            switch it on and get on with your life.
           </p>
 
           <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 lg:justify-start">
-            {["No Hidden Fees", "Withdraw Anytime", "2FA Secured"].map((item) => (
+            {["Start With Just $250", "Withdraw Anytime", "2FA Secured"].map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <CheckIcon className="h-4 w-4 text-green-600" />
                 {item}
