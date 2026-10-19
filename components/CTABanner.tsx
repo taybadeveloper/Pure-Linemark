@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@/components/icons";
 
 export default function CTABanner() {
   return (
-    <section className="bg-brand py-16">
+    <section className="bg-brand py-8">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 text-center sm:px-6 lg:flex-row lg:justify-between lg:px-8 lg:text-left">
         <div>
           <h2 className="font-display text-3xl font-semibold uppercase leading-tight tracking-tight text-ink sm:text-4xl">

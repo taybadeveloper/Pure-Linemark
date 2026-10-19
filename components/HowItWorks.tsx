@@ -5,7 +5,7 @@ import { ArrowRightIcon } from "@/components/icons";
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-16 lg:py-28">
+    <section id="how-it-works" className="py-8 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Three Steps to AI Powered Trading"

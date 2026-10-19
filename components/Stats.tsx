@@ -2,7 +2,7 @@ import { stats } from "@/components/data";
 
 export default function Stats() {
   return (
-    <section className="bg-brand py-14">
+    <section className="bg-brand py-7">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">

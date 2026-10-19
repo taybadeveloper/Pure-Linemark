@@ -5,7 +5,7 @@ import { QuoteIcon, StarIcon } from "@/components/icons";
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="py-16 lg:py-28">
+    <section id="reviews" className="py-8 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="4.8/5 From Thousands of Australian Traders"

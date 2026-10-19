@@ -39,7 +39,7 @@ export default function AboutPage() {
         description="Pure Linemark exists for one reason: to make world-class automated trading simple, secure and accessible for everyday Australians, no finance degree required."
       />
 
-      <section className="py-16 lg:py-28">
+      <section className="py-8 lg:py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
