@@ -27,15 +27,15 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-8 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-12 lg:pt-20">
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
           <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl">
-            <span className="text-amber-600">Pure Linemark</span> Makes Your
+            <span className="text-amber-600">Pure Linemark</span> AI Trading
             <br />
-            Money Work While You Sleep
+            Works While You Sleep
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
-            Pure Linemark&apos;s AI engine trades global markets for you, 24 hours a day, 7
-            days a week. You don&apos;t read charts. You don&apos;t watch screens. You just
-            switch it on and get on with your life.
+            Pure Linemark&apos;s AI trading engine trades global markets for you, 24 hours a
+            day, 7 days a week. You don&apos;t read charts. You don&apos;t watch screens. You
+            just switch it on and get on with your life.
           </p>
 
           <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600 lg:justify-start">
