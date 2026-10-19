@@ -24,17 +24,17 @@ export default function ContactPage() {
           <div className="space-y-8 lg:col-span-6">
           <div className="text-center lg:text-left">
             <h2 className="font-display text-2xl font-semibold uppercase leading-tight tracking-tight text-slate-900 md:text-3xl">
-              Talk To A Real Person
+              Questions? We&apos;re Ready To Help
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600">
-              Have a question about your account, deposits or withdrawals? Our
-              Australian support team is here 7 days a week, from 8am to 10pm
-              AEST. Send your details through the form and we&apos;ll get back
-              to you fast, usually within one business day.
+              Need help with your account, a deposit or a withdrawal? Our
+              Australian team answers fast, 7 days a week from 8am to 10pm
+              AEST. Drop your details in the form and we&apos;ll come back to
+              you, usually within one business day.
             </p>
             <p className="mt-3 text-base leading-relaxed text-slate-600">
-              The AI engine itself never stops. It trades global markets 24/7,
-              365 days a year, even while you sleep.
+              While you wait, the AI engine keeps working. It trades global
+              markets 24/7, so your portfolio never takes a day off.
             </p>
           </div>
 
