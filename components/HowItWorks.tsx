@@ -8,8 +8,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-16 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="How It Works"
-          title="Three Steps to AI-Powered Trading"
+          title="Three Steps to AI Powered Trading"
           description="No charts to watch, no experience required. You fund your account, switch the engine on, and let the AI do the rest."
         />
 

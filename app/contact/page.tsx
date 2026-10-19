@@ -15,7 +15,6 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Contact Pure Linemark"
         title="We're Here to Help, 7 Days a Week"
         description="Questions about your account, deposits or withdrawals? Our Australian support team responds fast, usually within one business day."
       />

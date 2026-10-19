@@ -13,7 +13,6 @@ export default function FaqPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Help Centre"
         title="Frequently Asked Questions"
         description="Everything you need to know about the Pure Linemark AI engine, deposits, withdrawals and account security, answered in plain English."
       />

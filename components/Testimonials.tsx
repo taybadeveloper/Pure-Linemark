@@ -8,7 +8,6 @@ export default function Testimonials() {
     <section id="reviews" className="py-16 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Member Reviews"
           title="4.8/5 From Thousands of Australian Traders"
           description="Here's what members across Australia say about trading with the Pure Linemark AI engine."
         />

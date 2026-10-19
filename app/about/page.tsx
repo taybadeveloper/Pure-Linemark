@@ -6,7 +6,7 @@ import { BotIcon, ShieldIcon, HeadsetIcon, CheckIcon } from "@/components/icons"
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Pure Linemark, the Australian AI-powered trading platform built by traders and engineers to make automated trading simple, secure and accessible.",
+    "Learn about Pure Linemark, the Australian AI powered trading platform built by traders and engineers to make automated trading simple, secure and accessible.",
   alternates: { canonical: "/about" },
 };
 
@@ -35,7 +35,6 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader
-        eyebrow="About Pure Linemark"
         title="AI Built for Australian Traders"
         description="Pure Linemark exists for one reason: to make world-class automated trading simple, secure and accessible for everyday Australians, no finance degree required."
       />
@@ -44,10 +43,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
-                Our Story
-              </p>
-              <h2 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-slate-900 md:text-[2.25rem] lg:text-4xl">
+              <h2 className="font-display text-3xl font-bold uppercase leading-tight text-slate-900 md:text-[2.25rem] lg:text-4xl">
                 From a team that got tired of watching charts
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-600 lg:mx-0">
@@ -65,16 +61,16 @@ export default function AboutPage() {
                 <p>
                   Today, more than 28,000 Australians trust{" "}
                   <strong className="text-slate-900">Pure Linemark</strong> to trade on their
-                  behalf, from first-time investors starting with $250 to experienced traders
+                  behalf, from first time investors starting with $250 to experienced traders
                   who simply want their capital working harder.
                 </p>
               </div>
               <ul className="mx-auto mt-8 grid max-w-lg gap-3 sm:grid-cols-2 lg:mx-0">
                 {[
-                  "Australian-owned & operated",
+                  "Australian owned & operated",
                   "28,000+ active members",
                   "24/7 automated trading",
-                  "Australian-based support team",
+                  "Australian based support team",
                 ].map((item) => (
                   <li key={item} className="flex items-start justify-center gap-2.5 text-sm font-medium text-slate-700 lg:justify-start">
                     <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />

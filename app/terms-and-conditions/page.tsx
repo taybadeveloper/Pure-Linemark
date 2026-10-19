@@ -68,7 +68,6 @@ export default function TermsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Legal"
         title="Terms & Conditions"
         description="The rules that govern your use of the Pure Linemark platform. Last updated: 29 September 2026."
       />

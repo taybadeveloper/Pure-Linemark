@@ -7,7 +7,7 @@ const perks = [
   `Start with just ${MIN_DEPOSIT}`,
   "No account or withdrawal fees",
   "Withdraw anytime, most in 24 hours",
-  "2FA + bank-grade encryption",
+  "2FA + bank grade encryption",
   "Australian support, 7 days a week",
 ];
 
@@ -16,7 +16,6 @@ export default function SignUpSection() {
     <section id="sign-up" className="border-t border-slate-200 bg-slate-50 py-16 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Get Started"
           title="Open Your Pure Linemark Account Today"
           description="Join 28,000+ Australians already trading on autopilot. Two minutes to sign up, that's all it takes."
         />

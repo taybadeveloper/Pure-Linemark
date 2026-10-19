@@ -31,7 +31,7 @@ const sections: Section[] = [
   },
   {
     title: "Data Security",
-    body: "We protect your information with bank-grade encryption and strict access controls. All accounts are protected with mandatory two-factor authentication, and client data is stored on secure, access-controlled infrastructure.",
+    body: "We protect your information with bank grade encryption and strict access controls. All accounts are protected with mandatory two-factor authentication, and client data is stored on secure, access-controlled infrastructure.",
   },
   {
     title: "Third-Party Services",
@@ -52,7 +52,6 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Legal"
         title="Privacy Policy"
         description="How Pure Linemark collects, uses and protects your personal information. Last updated: 29 September 2026."
       />

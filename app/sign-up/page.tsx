@@ -13,7 +13,6 @@ export default function SignUpPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Get Started"
         title="Open Your Account in 2 Minutes"
         description="Fill in the short form below and activate the AI engine with a minimum deposit of just $250. No account fees, no lock-ups, withdraw anytime."
       />

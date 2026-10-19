@@ -151,7 +151,7 @@ export const faqs: Faq[] = [
   {
     question: "How does the Pure Linemark AI work?",
     answer:
-      "Our AI engine continuously analyses global markets, crypto, forex and commodities, using dozens of technical indicators and real-time data feeds. When it identifies a high-probability opportunity, it executes the trade automatically on your behalf, applying your account's risk settings on every position.",
+      "Our AI engine continuously analyses global markets, crypto, forex and commodities, using dozens of technical indicators and real-time data feeds. When it identifies a high probability opportunity, it executes the trade automatically on your behalf, applying your account's risk settings on every position.",
   },
   {
     question: "How much do I need to start?",

@@ -52,7 +52,6 @@ export default function DisclaimerPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Legal"
         title="Disclaimer"
         description="Please read this disclaimer carefully before using the Pure Linemark platform. Last updated: 29 September 2026."
       />

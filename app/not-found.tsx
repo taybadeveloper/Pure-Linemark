@@ -15,10 +15,6 @@ export default function NotFound() {
       />
 
       <div className="relative mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-24">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-700">
-          Error 404
-        </p>
-
         <p className="mt-4 font-display text-7xl font-bold leading-none text-amber-500 sm:text-8xl">
           404
         </p>
