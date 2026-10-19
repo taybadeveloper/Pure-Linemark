@@ -58,8 +58,8 @@ export default function Navbar() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo light />
 
-        <div className="hidden items-center gap-8 md:flex">
-          <nav className="flex items-center gap-8" aria-label="Main navigation">
+        <div className="hidden items-center gap-6 lg:flex">
+          <nav className="flex items-center gap-6" aria-label="Main navigation">
             {navLinks.map((link) => {
               const target = link.href.split("#")[0];
               const active =
@@ -84,7 +84,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 text-slate-800 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 text-slate-800 lg:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
         >
@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {open && (
         <nav
-          className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 md:hidden"
+          className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 lg:hidden"
           aria-label="Mobile navigation"
         >
           <ul className="space-y-0.5">
