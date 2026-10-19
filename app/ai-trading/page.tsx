@@ -90,7 +90,7 @@ export default function AiTradingPage() {
       <section className="py-8 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title="What Is AI Trading?" />
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-slate-600">
+          <div className="mt-8 space-y-4 text-center text-base leading-relaxed text-slate-600">
             {whatIsAiTrading.map((paragraph) => (
               <p key={paragraph.slice(0, 24)}>
                 <BoldBrand text={paragraph} />
