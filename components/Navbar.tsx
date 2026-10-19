@@ -74,7 +74,9 @@ export default function Navbar() {
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
-                  {link.label}
+                  {/* full label on mobile and desktop, short label on tablet */}
+                  <span className="md:hidden lg:inline">{link.label}</span>
+                  <span className="hidden md:inline lg:hidden">{link.short ?? link.label}</span>
                 </Link>
               );
             })}

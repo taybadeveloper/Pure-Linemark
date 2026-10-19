@@ -34,13 +34,13 @@ export type IconName =
   | "star";
 
 export const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "AI Trading", href: "/ai-trading" },
-  { label: "Features", href: "/features" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Review", href: "/pure-linemark-review" },
-  { label: "FAQs", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Home", short: "Home", href: "/" },
+  { label: "AI Trading", short: "AI Trading", href: "/ai-trading" },
+  { label: "Features", short: "Features", href: "/features" },
+  { label: "How It Works", short: "Works", href: "/how-it-works" },
+  { label: "Review", short: "Reviews", href: "/pure-linemark-review" },
+  { label: "FAQs", short: "FAQs", href: "/faq" },
+  { label: "Contact Us", short: "Contact", href: "/contact" },
 ];
 
 export interface Feature {
