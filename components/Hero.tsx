@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeroForm from "@/components/HeroForm";
+import PhoneMockup from "@/components/PhoneMockup";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 
 export default function Hero() {
@@ -63,16 +63,7 @@ export default function Hero() {
         </div>
 
         <div className="relative animate-fade-up lg:col-span-5 lg:pl-6" style={{ animationDelay: "0.15s" }}>
-          {/* subtle glow behind the form */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -inset-4 rounded-3xl opacity-60"
-            style={{
-              background:
-                "radial-gradient(400px 300px at 60% 30%, rgba(245,179,1,0.15), transparent 70%)",
-            }}
-          />
-          <HeroForm />
+          <PhoneMockup />
         </div>
       </div>
     </section>
