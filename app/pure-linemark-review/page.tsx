@@ -78,7 +78,7 @@ export default function ReviewPage() {
       <section className="py-8 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title="What Is Pure Linemark?" />
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-slate-600">
+          <div className="mt-8 space-y-4 text-center text-base leading-relaxed text-slate-600">
             <p>
               Pure Linemark is an AI powered trading platform designed for
               Australians. You fund your account, switch on the AI engine and it
