@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import BoldBrand from "@/components/BoldBrand";
+import TabletMockup from "@/components/TabletMockup";
 import {
   intro,
   journeySteps,
@@ -125,29 +126,41 @@ export function ProcessSection() {
   );
 }
 
-/** Home + AI Trading page: "What Is AI Trading?" explainer */
+/** Home: "What Is AI Trading?" explainer with tablet mockup beside it */
 export function AiTradingSection() {
   return (
     <section className="border-t border-slate-200 bg-slate-50 py-8 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          title={aiTradingExplain.title}
-          description={aiTradingExplain.body.join(" ")}
-        />
-        <div className="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-3">
-          {aiTradingExplain.points.map((point) => (
-            <div
-              key={point.title}
-              className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm"
-            >
-              <h3 className="font-display text-base font-semibold uppercase tracking-wide text-amber-700">
-                {point.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                {point.description}
-              </p>
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <h2 className="font-display text-3xl font-semibold uppercase leading-tight tracking-tight text-slate-900 md:text-[2rem] lg:text-4xl">
+              {aiTradingExplain.title}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              {aiTradingExplain.body.join(" ")}
+            </p>
+            <div className="mt-8 space-y-5">
+              {aiTradingExplain.points.map((point) => (
+                <div key={point.title} className="flex items-start gap-3.5">
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100">
+                    <CheckIcon className="h-4 w-4 text-amber-700" />
+                  </span>
+                  <div>
+                    <h3 className="font-display text-base font-semibold uppercase tracking-wide text-slate-900">
+                      {point.title}
+                    </h3>
+                    <p className="mt-0.5 text-sm leading-relaxed text-slate-600">
+                      {point.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div className="mx-auto w-full max-w-md">
+            <TabletMockup />
+          </div>
         </div>
       </div>
     </section>
