@@ -168,7 +168,7 @@ export default function ReviewPage() {
             title="Things To Consider"
             description="Before you get started, it's worth keeping a few things in mind."
           />
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-slate-600">
+          <div className="mt-8 space-y-4 text-center text-base leading-relaxed text-slate-600">
             <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-slate-900">
               AI Trading And Risk
             </h3>
