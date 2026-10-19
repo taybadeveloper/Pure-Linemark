@@ -139,17 +139,17 @@ export function AiTradingSection() {
             <p className="mt-4 text-center text-base leading-relaxed text-slate-600 lg:text-left">
               {aiTradingExplain.body.join(" ")}
             </p>
-            <div className="mt-8 space-y-5">
+            <div className="mx-auto mt-8 max-w-sm space-y-5 lg:mx-0">
               {aiTradingExplain.points.map((point) => (
-                <div key={point.title} className="flex items-start justify-center gap-3.5 lg:justify-start">
+                <div key={point.title} className="flex items-start justify-start gap-3.5">
                   <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100">
                     <CheckIcon className="h-4 w-4 text-amber-700" />
                   </span>
                   <div>
-                    <h3 className="text-center font-display text-base font-semibold uppercase tracking-wide text-slate-900 lg:text-left">
+                    <h3 className="font-display text-base font-semibold uppercase tracking-wide text-slate-900">
                       {point.title}
                     </h3>
-                    <p className="mt-0.5 text-center text-sm leading-relaxed text-slate-600 lg:text-left">
+                    <p className="mt-0.5 text-sm leading-relaxed text-slate-600">
                       {point.description}
                     </p>
                   </div>
