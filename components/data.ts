@@ -35,8 +35,10 @@ export type IconName =
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "AI Trading", href: "/ai-trading" },
+  { label: "Features", href: "/features" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Review", href: "/pure-linemark-review" },
   { label: "FAQs", href: "/faq" },
 ];
 
@@ -203,3 +205,162 @@ export const australianStates = [
 
 export const riskDisclaimer =
   "Trading in financial markets involves significant risk of loss and is not suitable for all investors. Past performance, including that of any automated trading system, is not a guarantee or indicator of future results. You should never invest money you cannot afford to lose, and you should consider seeking independent financial advice before making any investment decision. Pure Linemark does not provide financial advice.";
+
+/* ------------------------------------------------------------------ */
+/* Reference-flow content (all Pure Linemark branded)                  */
+/* ------------------------------------------------------------------ */
+
+export const intro = {
+  title: "What Is Pure Linemark?",
+  body: [
+    "Pure Linemark is an AI trading platform built for everyday Australians. You fund your account, switch on the AI engine and it trades global markets on your behalf.",
+    "No charts to study. No experience needed. The engine scans crypto, forex and commodities 24/7 and follows strict risk rules on every trade it makes.",
+  ],
+  points: [
+    "28,000+ Australian members",
+    "Minimum deposit just $250",
+    "24/7 automated trading",
+    "Australian support team",
+  ],
+};
+
+export interface JourneyStep {
+  title: string;
+  description: string;
+}
+
+export const journeySteps: JourneyStep[] = [
+  {
+    title: "Explore The Market",
+    description:
+      "The AI engine studies global markets around the clock. You simply decide how much you want to start with.",
+  },
+  {
+    title: "Activate The AI Engine",
+    description:
+      "One tap switches the engine on. It follows your risk settings on every trade it makes.",
+  },
+  {
+    title: "Review AI Insights",
+    description:
+      "Open your dashboard anytime and see what the engine is doing, which markets it trades and how your balance is tracking.",
+  },
+  {
+    title: "Consider Risk",
+    description:
+      "You stay in control. Set your risk level, adjust it when you like and stop the engine whenever you want.",
+  },
+  {
+    title: "Watch Your Portfolio",
+    description:
+      "Check in when it suits you. Withdraw your money anytime and most payouts land within 24 hours.",
+  },
+];
+
+export const benefits = [
+  {
+    title: "Faster Market Research",
+    description:
+      "The engine analyses dozens of indicators in seconds. Work that would take you hours is done for you, around the clock.",
+  },
+  {
+    title: "Pattern Analysis",
+    description:
+      "It spots market patterns and price movements you would miss, then acts on them in milliseconds.",
+  },
+  {
+    title: "Better Organisation",
+    description:
+      "Your trades, balance and history sit in one clean dashboard. No spreadsheets, no confusion.",
+  },
+  {
+    title: "Trend Monitoring",
+    description:
+      "The engine watches trends across crypto, forex and commodities so your portfolio is never caught off guard.",
+  },
+  {
+    title: "Risk Awareness",
+    description:
+      "Stop losses and position limits are built into every trade. Risk is controlled automatically.",
+  },
+  {
+    title: "Structured Decisions",
+    description:
+      "Every trade follows the same disciplined rules. No emotion, no guessing, no chasing losses.",
+  },
+];
+
+export const processSteps = [
+  {
+    title: "Market Data",
+    description:
+      "The engine pulls live data from global markets, 24 hours a day, 7 days a week.",
+  },
+  {
+    title: "AI Analysis",
+    description:
+      "Dozens of technical indicators and real time feeds are analysed in milliseconds.",
+  },
+  {
+    title: "Trading Insights",
+    description:
+      "The engine finds high probability opportunities and sizes every position to your risk settings.",
+  },
+  {
+    title: "Your Decision",
+    description:
+      "You stay in control. You set the risk level, you can stop trading anytime and you withdraw when it suits you.",
+  },
+];
+
+export const aiTradingExplain = {
+  title: "What Is AI Trading?",
+  body: [
+    "AI trading means software studies the markets and makes trades for you. Instead of you watching charts all day, a trained engine does the watching.",
+    "Pure Linemark's engine never gets tired, never panics and never misses a market move while you sleep.",
+  ],
+  points: [
+    {
+      title: "Runs 24/7",
+      description: "Markets never close. Neither does the engine.",
+    },
+    {
+      title: "Follows Strict Rules",
+      description: "Stop losses and position limits on every trade.",
+    },
+    {
+      title: "No Emotion",
+      description: "No panic selling. No chasing losses. Just discipline.",
+    },
+  ],
+};
+
+export const australiaSection = {
+  title: "Built With Australian Investors In Mind",
+  body: "Pure Linemark was created in Australia, for Australians. Every feature is designed around how Aussie investors actually trade.",
+  points: [
+    "Australian support team, 7 days a week",
+    "AUD friendly with no surprise fees",
+    "Open to residents in every state",
+    "Built for all experience levels",
+  ],
+};
+
+export const reviewSections = [
+  {
+    title: "What Is Pure Linemark?",
+    body: "Pure Linemark is an AI trading platform for Australians. You deposit funds, activate the AI engine and it trades crypto, forex and commodities on your behalf, 24 hours a day. There is no experience required and no chart watching involved.",
+  },
+  {
+    title: "How Pure Linemark Works",
+    body: "The engine collects live market data, analyses dozens of indicators and executes trades automatically when it finds a high probability opportunity. Every trade follows your account's risk settings, with stop losses and position limits built in.",
+  },
+  {
+    title: "Who Is Pure Linemark For?",
+    body: "Pure Linemark suits busy Australians who want market exposure without spending hours on research. It works for complete beginners who have never traded, and for experienced investors who simply want their capital working harder around the clock.",
+  },
+  {
+    title: "Benefits At A Glance",
+    body: "Minimum deposit of just $250. No sign up fees, no account fees and no withdrawal fees. Two factor authentication and bank level encryption as standard. Withdrawals processed within 24 hours in most cases. Australian support, 7 days a week.",
+  },
+];

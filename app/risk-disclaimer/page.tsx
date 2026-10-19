@@ -4,10 +4,10 @@ import BoldBrand from "@/components/BoldBrand";
 import { EMAIL } from "@/components/data";
 
 export const metadata: Metadata = {
-  title: "Disclaimer",
+  title: "Risk Disclaimer",
   description:
     "Pure Linemark risk disclaimer — trading involves significant risk of loss. Read this before using the platform.",
-  alternates: { canonical: "/disclaimer" },
+  alternates: { canonical: "/risk-disclaimer" },
 };
 
 interface Section {
@@ -52,7 +52,7 @@ export default function DisclaimerPage() {
   return (
     <>
       <PageHeader
-        title="Disclaimer"
+        title="Risk Disclaimer"
         description="Please read this disclaimer carefully before using the Pure Linemark platform. Last updated: 29 September 2026."
       />
 

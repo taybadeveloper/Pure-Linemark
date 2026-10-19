@@ -62,7 +62,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="text-sm text-slate-200 transition-colors hover:text-brand">
+                <Link href="/risk-disclaimer" className="text-sm text-slate-200 transition-colors hover:text-brand">
                   Disclaimer
                 </Link>
               </li>

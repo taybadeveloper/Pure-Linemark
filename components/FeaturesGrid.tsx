@@ -7,7 +7,7 @@ export default function FeaturesGrid() {
     <section id="features" className="border-y border-slate-200 bg-slate-50 py-8 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Everything You Need to Trade on Autopilot"
+          title="A Focused Set Of Trading Tools"
           description="Pure Linemark was built for Australians who want exposure to global markets without staring at charts all day."
         />
 
