@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import HeroForm from "@/components/HeroForm";
 import TabletMockup from "@/components/TabletMockup";
-import { EMAIL } from "@/components/data";
-import { MailIcon, ClockIcon, MapPinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -22,56 +20,25 @@ export default function ContactPage() {
 
       <section className="border-t border-slate-200 bg-slate-50 py-8 lg:py-14">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-11 lg:px-8">
-          {/* Contact info cards + form, left side */}
+          {/* Contact text + form, left side */}
           <div className="space-y-8 lg:col-span-6">
-          <div className="space-y-6">
-          <a
-            href={`mailto:${EMAIL}`}
-            className="group flex flex-col items-center justify-center gap-5 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-colors hover:border-amber-300 lg:flex-row lg:justify-start lg:text-left"
-          >
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
-              <MailIcon className="h-6 w-6 text-amber-700" />
-            </span>
-            <span>
-              <span className="block text-sm font-semibold uppercase tracking-widest text-slate-500">
-                Email Us
-              </span>
-              <span className="mt-1 block break-all font-display text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
-            </span>
-          </a>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:text-left">
-            <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-start">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
-                <ClockIcon className="h-6 w-6 text-amber-700" />
-              </span>
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-widest text-slate-500">
-                  Support Hours
-                </p>
-                <p className="mt-1.5 font-display text-lg font-semibold text-slate-900">7 days: 8am to 10pm AEST</p>
-                <p className="mt-0.5 text-sm text-slate-500">Trading engine runs 24/7, 365 days</p>
-              </div>
-            </div>
+          <div className="text-center lg:text-left">
+            <h2 className="font-display text-2xl font-semibold uppercase leading-tight tracking-tight text-slate-900 md:text-3xl">
+              Talk To A Real Person
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Have a question about your account, deposits or withdrawals? Our
+              Australian support team is here 7 days a week, from 8am to 10pm
+              AEST. Send your details through the form and we&apos;ll get back
+              to you fast, usually within one business day.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-slate-600">
+              The AI engine itself never stops. It trades global markets 24/7,
+              365 days a year, even while you sleep.
+            </p>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:text-left">
-            <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:justify-start">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100">
-                <MapPinIcon className="h-6 w-6 text-amber-700" />
-              </span>
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-widest text-slate-500">
-                  Availability
-                </p>
-                <p className="mt-1.5 font-display text-lg font-semibold text-slate-900">All Australian states</p>
-                <p className="mt-0.5 text-sm text-slate-500">Open to Australian residents nationwide</p>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          {/* Registration form, below the cards */}
+          {/* Registration form, below the text */}
           <HeroForm />
           </div>
 
