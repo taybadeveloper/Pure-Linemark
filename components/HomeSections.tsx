@@ -141,7 +141,7 @@ export function AiTradingSection() {
             </p>
             <div className="mx-auto mt-8 max-w-sm space-y-5 lg:mx-0">
               {aiTradingExplain.points.map((point) => (
-                <div key={point.title} className="flex items-start justify-start gap-3.5">
+                <div key={point.title} className="flex items-start justify-center gap-3.5 lg:justify-start">
                   <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100">
                     <CheckIcon className="h-4 w-4 text-amber-700" />
                   </span>
