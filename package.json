@@ -25,5 +25,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "Pure Linemark — professional line marking services across Australia. Built with Next.js."
+  "description": "Pure Linemark, an AI trading platform for Australians. Built with Next.js."
 }

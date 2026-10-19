@@ -15,7 +15,7 @@ export default function FAQ({ limit }: { limit?: number }) {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Frequently Asked Questions"
-          description="Straight answers to the questions we hear most from Australian businesses and councils."
+          description="Straight answers to the questions Australian traders ask us most about the AI engine, deposits, withdrawals and account security."
         />
 
         <div className="mt-12 space-y-4">
