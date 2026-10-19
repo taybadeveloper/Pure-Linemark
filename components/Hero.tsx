@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-8 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-12 lg:pt-20">
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
-          <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl">
+          <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-[2.5rem]">
             <span className="text-amber-600">Pure Linemark</span> AI Trading
             <br />
             Works While You Sleep
