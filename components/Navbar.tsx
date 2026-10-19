@@ -79,13 +79,6 @@ export default function Navbar() {
               );
             })}
           </nav>
-
-          <Link
-            href="/sign-up"
-            className="rounded-md bg-ink px-5 py-2.5 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-slate-800"
-          >
-            Sign Up
-          </Link>
         </div>
 
         <button
@@ -119,15 +112,6 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-2 px-3">
-            <Link
-              href="/sign-up"
-              onClick={() => setOpen(false)}
-              className="block rounded-md bg-ink px-5 py-2.5 text-center font-display font-semibold uppercase tracking-wider text-white"
-            >
-              Sign Up
-            </Link>
-          </div>
         </nav>
       )}
     </header>

@@ -40,6 +40,7 @@ export const navLinks = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Review", href: "/pure-linemark-review" },
   { label: "FAQs", href: "/faq" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export interface Feature {
