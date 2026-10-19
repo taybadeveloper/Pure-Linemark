@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import BoldBrand from "@/components/BoldBrand";
 import SectionHeading from "@/components/SectionHeading";
 import { benefits } from "@/components/data";
-import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
   title: "AI Trading",
@@ -213,7 +212,6 @@ export default function AiTradingPage() {
       </section>
 
       {/* AI Trading FAQs */}
-      <FAQ />
 
       {/* Ready To Explore AI Trading? */}
     </>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import BoldBrand from "@/components/BoldBrand";
 import SectionHeading from "@/components/SectionHeading";
-import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
   title: "Review",
@@ -220,7 +219,6 @@ export default function ReviewPage() {
       </section>
 
       {/* Frequently Asked Questions */}
-      <FAQ />
 
       {/* Ready To See It For Yourself? */}
       <section className="border-t border-slate-200 bg-slate-50 py-8 lg:py-14">
