@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import HeroForm from "@/components/HeroForm";
+import TabletMockup from "@/components/TabletMockup";
 import { EMAIL } from "@/components/data";
 import { MailIcon, ClockIcon, MapPinIcon } from "@/components/icons";
 
@@ -20,9 +21,10 @@ export default function ContactPage() {
       />
 
       <section className="border-t border-slate-200 bg-slate-50 py-8 lg:py-14">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-11 lg:px-8">
-          {/* Contact info cards, left side */}
-          <div className="space-y-6 lg:col-span-5">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-11 lg:px-8">
+          {/* Contact info cards + form, left side */}
+          <div className="space-y-8 lg:col-span-6">
+          <div className="space-y-6">
           <a
             href={`mailto:${EMAIL}`}
             className="group flex flex-col items-center justify-center gap-5 rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-colors hover:border-amber-300 lg:flex-row lg:justify-start lg:text-left"
@@ -69,9 +71,13 @@ export default function ContactPage() {
           </div>
           </div>
 
-          {/* Registration form, right side */}
-          <div className="lg:col-span-6">
-            <HeroForm />
+          {/* Registration form, below the cards */}
+          <HeroForm />
+          </div>
+
+          {/* Tablet mockup, right side */}
+          <div className="lg:col-span-5">
+            <TabletMockup />
           </div>
         </div>
       </section>
