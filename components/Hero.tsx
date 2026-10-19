@@ -26,10 +26,10 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
-          <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
-            <span className="text-amber-600">Pure Linemark</span> Makes Your Money
+          <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl">
+            <span className="text-amber-600">Pure Linemark</span> Makes Your
             <br />
-            Work While You Sleep
+            Money Work While You Sleep
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
