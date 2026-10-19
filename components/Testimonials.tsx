@@ -30,7 +30,7 @@ export default function Testimonials() {
                 &ldquo;<BoldBrand text={review.quote} />&rdquo;
               </blockquote>
               <figcaption className="mt-6 border-t border-slate-200 pt-4">
-                <p className="font-display font-bold uppercase tracking-wide text-slate-900">
+                <p className="font-display font-semibold uppercase tracking-wide text-slate-900">
                   {review.name}
                 </p>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-amber-700">

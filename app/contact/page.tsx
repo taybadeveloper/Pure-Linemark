@@ -31,10 +31,10 @@ export default function ContactPage() {
               <MailIcon className="h-6 w-6 text-amber-700" />
             </span>
             <span>
-              <span className="block text-sm font-bold uppercase tracking-widest text-slate-500">
+              <span className="block text-sm font-semibold uppercase tracking-widest text-slate-500">
                 Email Us
               </span>
-              <span className="mt-1 block break-all font-display text-xl font-bold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
+              <span className="mt-1 block break-all font-display text-xl font-semibold text-slate-900 transition-colors group-hover:text-amber-700">{EMAIL}</span>
             </span>
           </a>
 
@@ -44,10 +44,10 @@ export default function ContactPage() {
                 <ClockIcon className="h-6 w-6 text-amber-700" />
               </span>
               <div>
-                <p className="text-sm font-bold uppercase tracking-widest text-slate-500">
+                <p className="text-sm font-semibold uppercase tracking-widest text-slate-500">
                   Support Hours
                 </p>
-                <p className="mt-1.5 font-display text-lg font-bold text-slate-900">7 days: 8am to 10pm AEST</p>
+                <p className="mt-1.5 font-display text-lg font-semibold text-slate-900">7 days: 8am to 10pm AEST</p>
                 <p className="mt-0.5 text-sm text-slate-500">Trading engine runs 24/7, 365 days</p>
               </div>
             </div>
@@ -59,10 +59,10 @@ export default function ContactPage() {
                 <MapPinIcon className="h-6 w-6 text-amber-700" />
               </span>
               <div>
-                <p className="text-sm font-bold uppercase tracking-widest text-slate-500">
+                <p className="text-sm font-semibold uppercase tracking-widest text-slate-500">
                   Availability
                 </p>
-                <p className="mt-1.5 font-display text-lg font-bold text-slate-900">All Australian states</p>
+                <p className="mt-1.5 font-display text-lg font-semibold text-slate-900">All Australian states</p>
                 <p className="mt-0.5 text-sm text-slate-500">Open to Australian residents nationwide</p>
               </div>
             </div>

@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
-              <h2 className="font-display text-3xl font-bold uppercase leading-tight text-slate-900 md:text-[2.25rem] lg:text-4xl">
+              <h2 className="font-display text-3xl font-semibold uppercase leading-tight text-slate-900 md:text-[2.25rem] lg:text-4xl">
                 From a team that got tired of watching charts
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-slate-600 lg:mx-0">
@@ -213,8 +213,8 @@ export default function AboutPage() {
                 </svg>
               </div>
               <div className="absolute -bottom-5 left-6 rounded-lg border border-slate-200 bg-white px-5 py-4 shadow-xl">
-                <p className="font-display text-3xl font-bold text-amber-600">28k+</p>
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
+                <p className="font-display text-3xl font-semibold text-amber-600">28k+</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
                   Australian Members
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function AboutPage() {
                 <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
                   <pillar.icon className="h-7 w-7 text-amber-600" />
                 </span>
-                <h3 className="mt-5 font-display text-[1.375rem] font-bold uppercase tracking-wide text-slate-900">
+                <h3 className="mt-5 font-display text-[1.375rem] font-semibold uppercase tracking-wide text-slate-900">
                   {pillar.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">{pillar.description}</p>

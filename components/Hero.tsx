@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="animate-fade-up text-center lg:col-span-7 lg:text-left">
-          <h1 className="font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
+          <h1 className="font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 sm:text-4xl md:text-5xl xl:text-5xl">
             <span className="text-amber-600">Pure Linemark</span> Makes Your Money
             <br />
             Work While You Sleep
@@ -50,12 +50,12 @@ export default function Hero() {
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 lg:justify-start">
             <Link
               href="#how-it-works"
-              className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-amber-700 transition-colors hover:text-amber-800"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-amber-700 transition-colors hover:text-amber-800"
             >
               Learn How The AI Works
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
-            <a href="#features" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-slate-500 transition-colors hover:text-slate-900">
+            <a href="#features" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-slate-500 transition-colors hover:text-slate-900">
               View Our Features
               <ArrowRightIcon className="h-4 w-4" />
             </a>

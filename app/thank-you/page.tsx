@@ -61,7 +61,7 @@ export default async function ThankYouPage({
           </svg>
         </span>
 
-        <h1 className="mt-8 font-display text-4xl font-bold uppercase tracking-tight text-slate-900 sm:text-5xl">
+        <h1 className="mt-8 font-display text-4xl font-semibold uppercase tracking-tight text-slate-900 sm:text-5xl">
           Thank You{name ? `, ${name}` : ""}!
         </h1>
 
@@ -77,10 +77,10 @@ export default async function ThankYouPage({
               key={step.title}
               className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand bg-amber-50 font-display text-lg font-bold text-amber-700">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand bg-amber-50 font-display text-lg font-semibold text-amber-700">
                 {index + 1}
               </span>
-              <h2 className="mt-4 font-display text-base font-bold uppercase tracking-wide text-slate-900">
+              <h2 className="mt-4 font-display text-base font-semibold uppercase tracking-wide text-slate-900">
                 {step.title}
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.description}</p>
@@ -91,7 +91,7 @@ export default async function ThankYouPage({
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-md bg-ink px-7 py-3.5 font-display text-base font-bold uppercase tracking-wider text-white shadow-lg shadow-slate-900/15 transition-colors hover:bg-slate-800"
+            className="inline-flex items-center gap-2 rounded-md bg-ink px-7 py-3.5 font-display text-base font-semibold uppercase tracking-wider text-white shadow-lg shadow-slate-900/15 transition-colors hover:bg-slate-800"
           >
             Back to Home
             <ArrowRightIcon className="h-5 w-5 text-brand" />

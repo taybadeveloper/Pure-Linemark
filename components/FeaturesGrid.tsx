@@ -22,7 +22,7 @@ export default function FeaturesGrid() {
                 <span className="mx-auto flex h-13 w-13 items-center justify-center rounded-lg bg-amber-100 sm:mx-0">
                   <Icon className="h-6.5 w-6.5 text-amber-700" />
                 </span>
-                <h3 className="mt-5 font-display text-xl font-bold uppercase tracking-wide text-slate-900">
+                <h3 className="mt-5 font-display text-xl font-semibold uppercase tracking-wide text-slate-900">
                   {feature.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">{feature.description}</p>

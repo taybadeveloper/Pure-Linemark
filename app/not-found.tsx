@@ -15,11 +15,11 @@ export default function NotFound() {
       />
 
       <div className="relative mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8 lg:py-24">
-        <p className="mt-4 font-display text-7xl font-bold leading-none text-amber-500 sm:text-8xl">
+        <p className="mt-4 font-display text-7xl font-semibold leading-none text-amber-500 sm:text-8xl">
           404
         </p>
 
-        <h1 className="mx-auto mt-6 max-w-2xl font-display text-3xl font-bold uppercase leading-[1.3] tracking-tight text-slate-900 md:text-4xl">
+        <h1 className="mx-auto mt-6 max-w-2xl font-display text-3xl font-semibold uppercase leading-[1.3] tracking-tight text-slate-900 md:text-4xl">
           Page Not Found
         </h1>
 
@@ -31,7 +31,7 @@ export default function NotFound() {
         <div className="mt-10">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-md bg-ink px-7 py-3.5 font-display text-base font-bold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
+            className="inline-flex items-center gap-2 rounded-md bg-ink px-7 py-3.5 font-display text-base font-semibold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
           >
             Back to Home
           </Link>

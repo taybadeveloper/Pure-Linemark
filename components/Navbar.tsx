@@ -39,7 +39,7 @@ export function Logo({
         />
       </svg>
       <span
-        className={`font-display font-bold uppercase leading-none tracking-wider whitespace-nowrap ${
+        className={`font-display font-semibold uppercase leading-none tracking-wider whitespace-nowrap ${
           compact ? "text-base" : "text-xl"
         } ${light ? "text-ink" : "text-white"}`}
       >
@@ -82,7 +82,7 @@ export default function Navbar() {
 
           <Link
             href="/sign-up"
-            className="rounded-md bg-ink px-5 py-2.5 font-display text-sm font-bold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-slate-800"
+            className="rounded-md bg-ink px-5 py-2.5 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-slate-800"
           >
             Sign Up
           </Link>
@@ -123,7 +123,7 @@ export default function Navbar() {
             <Link
               href="/sign-up"
               onClick={() => setOpen(false)}
-              className="block rounded-md bg-ink px-5 py-2.5 text-center font-display font-bold uppercase tracking-wider text-white"
+              className="block rounded-md bg-ink px-5 py-2.5 text-center font-display font-semibold uppercase tracking-wider text-white"
             >
               Sign Up
             </Link>

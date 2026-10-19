@@ -34,7 +34,7 @@ export default function FAQ({ limit }: { limit?: number }) {
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-display text-base font-bold uppercase tracking-wide text-slate-900 sm:text-lg">
+                  <span className="font-display text-base font-semibold uppercase tracking-wide text-slate-900 sm:text-lg">
                     {faq.question}
                   </span>
                   <PlusIcon

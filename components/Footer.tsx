@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
+            <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-white">
               Quick Links
             </h3>
             <ul className="mt-5 space-y-2.5">
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="font-display text-sm font-bold uppercase tracking-widest text-white">
+            <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-white">
               Legal
             </h3>
             <ul className="mt-5 grid grid-cols-1 gap-2.5">

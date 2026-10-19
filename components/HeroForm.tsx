@@ -170,7 +170,7 @@ export default function HeroForm() {
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-2xl shadow-slate-900/15 sm:p-8">
-      <h2 className="text-center font-display text-2xl font-bold uppercase tracking-wide text-slate-900">
+      <h2 className="text-center font-display text-2xl font-semibold uppercase tracking-wide text-slate-900">
         Create Your Account
       </h2>
       <p className="mt-2 text-center text-sm text-slate-500">
@@ -179,7 +179,7 @@ export default function HeroForm() {
 
       {submitError && (
         <div className="mt-5 rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-slate-700" role="alert">
-          <p className="flex items-center gap-2 font-bold text-red-700">
+          <p className="flex items-center gap-2 font-semibold text-red-700">
             <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <circle cx="12" cy="12" r="9" />
               <path d="M12 8v4m0 4h.01" />
@@ -194,7 +194,7 @@ export default function HeroForm() {
         {/* First name + Last name in one row */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="firstName" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500">
+            <label htmlFor="firstName" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-500">
               First Name *
             </label>
             <input
@@ -210,7 +210,7 @@ export default function HeroForm() {
             <ErrorText message={errors.firstName} />
           </div>
           <div>
-            <label htmlFor="lastName" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500">
+            <label htmlFor="lastName" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-500">
               Last Name *
             </label>
             <input
@@ -229,7 +229,7 @@ export default function HeroForm() {
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500">
+          <label htmlFor="email" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-500">
             Email *
           </label>
           <input
@@ -247,7 +247,7 @@ export default function HeroForm() {
 
         {/* Phone with country flag dropdown */}
         <div>
-          <label htmlFor="phone" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500">
+          <label htmlFor="phone" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-500">
             Phone Number *
           </label>
           <div className="flex">
@@ -354,7 +354,7 @@ export default function HeroForm() {
 
         <button
           type="submit"
-          className="w-full rounded-md bg-ink px-7 py-3.5 font-display text-base font-bold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
+          className="w-full rounded-md bg-ink px-7 py-3.5 font-display text-base font-semibold uppercase tracking-wider text-white shadow-md shadow-slate-900/15 transition-colors hover:bg-brand hover:text-ink"
         >
           Sign Up Now
         </button>
